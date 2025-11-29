@@ -1,4 +1,4 @@
 dataset_name: DUDE
-data_dir: /data/datasets
-preprocessed_dir: /data/users/elopez
-page_retrieval: Concat  # Oracle / Concat / Logits / Maxconf / Anyconf / MaxConfPage / AnyConfPage / MajorPage / WeightMajorPage / Custom (HiVT5 only)
+data_dir: ./data/DUDE
+preprocessed_dir: ./data/DUDE/preprocessed
+page_retrieval: Concat

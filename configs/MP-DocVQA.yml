@@ -1,5 +1,6 @@
 dataset_name: MP-DocVQA
-imdb_dir: /data/users/elopez/data/mpdocvqa_imdb  # /imdb/collection/imdb_train.npy
-images_dir: /data/users/elopez/data/images
-layouts_dir: /data/users/elopez/data/
-page_retrieval: Concat  # Oracle / Concat / Logits / Maxconf / Anyconf / MaxConfPage / AnyConfPage / MajorPage / WeightMajorPage / Custom (HiVT5 only)
+# CAMBIOS: Rutas relativas a la carpeta 'data' que acabamos de crear
+imdb_dir: ./data/MP-DocVQA/imdb
+images_dir: ./data/MP-DocVQA/images
+layouts_dir: ./data/MP-DocVQA/layouts
+page_retrieval: Concat

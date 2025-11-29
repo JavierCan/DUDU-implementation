@@ -1,45 +1,35 @@
 model:
   model: RAGVT5
   add_sep_token: False
-  # model_weights: /data3fast/users/elopez/checkpoints/ragvt5_concat_mp-docvqa_train_generator/best.ckpt
+  # CAMBIO: Usamos el modelo base de HuggingFace porque no tienes el checkpoint 'best.ckpt' de elopez
+  model_weights: rubentito/vt5-base-spdocvqa
 
 data:
   dataset: MP-DocVQA
   page_retrieval: Concat
-  batch_size: 15
-  # layout_batch_size: 8
-
+  batch_size: 4 # Bajamos esto por si tu GPU es pequeña, luego lo subimos
+  
 retrieval:
   chunk_num: 20
   chunk_size: 60
   chunk_size_tol: 0.2
   overlap: 10
   include_surroundings: 0
-  embed_model: BGE # BGE, VT5
+  embed_model: BGE
   reranker_model: BGE
-  embed_weights: ["/data3fast/users/elopez/models/bge-m3-finetuned/checkpoint-2336", "/data3fast/users/elopez/models/bge-m3-finetuned-2/checkpoint-2336"]
+  # CAMBIO: Usamos el modelo público 'BAAI/bge-m3' en lugar de la ruta local rota
+  embed_weights: ["BAAI/bge-m3"] 
   reranker_weights: BAAI/bge-reranker-v2-m3
   reorder_chunks: False
   rerank_filter_tresh: 0
   rerank_max_chunk_num: 10
   rerank_min_chunk_num: 1
   
-# layout_model:
-#   layout_model: DIT # DIT, YOLO
-#   layout_model_weights: cmarkea/dit-base-layout-detection
-#   use_layout_labels: Text # Default, Embed, Text
-#   use_precomputed_layouts: True
-#   precomputed_layouts_path: /data3fast/users/elopez/data/images_layouts_dit_s2_spa.npz
-#   layout_embedding_scale: 10.0
-#   layout_loss_weight: 1.0
-#   cluster_layouts: True
-#   cluster_mode: spatial # spatial, spatial+semantic
-#   calculate_n_clusters: best # heuristic, best
-
 runtime:
-  visible_devices: [8, 9]
-  save_folder: 16-big_models
-  save_name_append: ["bge_m3_finetuned", "bge_m3_finetuned_2"]
+  # CAMBIO: Lightning suele darte la GPU 0. [8, 9] fallaría.
+  visible_devices: [0] 
+  save_folder: eval_results
+  save_name_append: ["bge_m3_base"]
   val_size: 1.0
   log_wandb: True
   log_media_interval: 10

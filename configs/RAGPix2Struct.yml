@@ -1,8 +1,9 @@
 save_dir: save/
 model_name: RAGPix2Struct
 model_weights: google/pix2struct-docvqa-base
-cache_dir: /data/users/elopez/models
-checkpoint_dir: /data/users/elopez/checkpoints
+# CAMBIO: Rutas locales
+cache_dir: ./models_cache
+checkpoint_dir: ./checkpoints
 device: cuda
 
 training_parameters:

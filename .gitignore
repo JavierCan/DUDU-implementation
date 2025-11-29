@@ -174,3 +174,33 @@ wandb/
 temp*
 *.ttf
 .gradio
+
+
+
+--- Archivos de Python ---
+
+pycache/
+*.py[cod]
+*$py.class
+
+--- Entornos Virtuales (¡No subir!) ---
+
+env/
+venv/
+.env
+miniconda3/
+
+--- Carpetas de Datos y Modelos (¡Muy pesados!) ---
+
+models_cache/
+save/
+checkpoints/
+data/
+outputs/
+logs/
+wandb/
+
+--- Archivos de sistema ---
+
+.DS_Store
+.vscode/
