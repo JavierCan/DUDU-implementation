@@ -87,6 +87,6 @@ if __name__ == "__main__":
 	)
 
 	# Train the embeddings
-	train_CL_embs(embed_model, dataset, output_dir="/data/users/elopez/models/bge-finetuned-dude")
+	train_CL_embs(embed_model, dataset, output_dir="./cl_embs_model")
 	conn.close()
 	print("Done!")

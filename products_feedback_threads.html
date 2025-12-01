@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Synthetic Dataset - Product Feedback Email Threads</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      margin: 40px;
+      background: #f5f5f5;
+      color: #222;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h2 {
+      margin-top: 40px;
+      border-bottom: 1px solid #aaa;
+      padding-bottom: 5px;
+    }
+    .thread {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      margin-bottom: 40px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+      page-break-inside: avoid;
+    }
+    .event-meta {
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 12px;
+      color: #555;
+      background: #f0f0f0;
+      padding: 6px 8px;
+      margin: 16px 0 4px 0;
+      border-left: 3px solid #888;
+    }
+    .email {
+      border: 1px solid #ccc;
+      background: #fff;
+      padding: 10px 12px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    .email-header {
+      font-size: 13px;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+    .email-header strong {
+      display: inline-block;
+      width: 65px;
+    }
+    .email-body {
+      white-space: pre-wrap;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .quoted {
+      border-left: 2px solid #ccc;
+      margin-top: 10px;
+      padding-left: 10px;
+      color: #555;
+      font-size: 13px;
+    }
+    .signature {
+      margin-top: 12px;
+      font-size: 13px;
+      color: #444;
+    }
+    hr.thread-separator {
+      margin: 50px 0;
+      border: none;
+      border-top: 2px dashed #bbb;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Synthetic Dataset – Product Feedback Email Threads</h1>
+
+<!-- ===================== THREAD 01 ===================== -->
+<div class="thread">
+  <h2>THREAD 01 – Sales dashboard (medium)</h2>
+
+  <div class="event-meta">
+    [EVENT: question_sent | timestamp: 2025-10-01 09:14:23 | actor: team_member | status: open]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Ana Torres" &lt;ana.torres@acme.com&gt;</div>
+      <div><strong>To:</strong> "Carlos López" &lt;carlos.lopez@client.com&gt;</div>
+      <div><strong>Subject:</strong> Follow-up on your opinion about the new sales dashboard</div>
+      <div><strong>Date:</strong> Wed, 01 Oct 2025 09:14:23 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Carlos,
+
+This is Ana from the Acme Analytics product team 😊.
+We’d love to hear your opinion about the new sales dashboard we released last week.
+
+A few specific questions:
+1. Is it easy for you to find the date and branch filters?
+2. Do you feel the charts load quickly, or do they feel slow?
+3. Is there any metric you miss on the main panel?
+
+Any comment, even a short one, helps us a lot.
+
+Thanks in advance!
+
+Best,
+Ana Torres
+Product Specialist – Acme Analytics
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: customer_reply_received | timestamp: 2025-10-01 11:02:09 | actor: customer | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Carlos López" &lt;carlos.lopez@client.com&gt;</div>
+      <div><strong>To:</strong> "Ana Torres" &lt;ana.torres@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Follow-up on your opinion about the new sales dashboard</div>
+      <div><strong>Date:</strong> Wed, 01 Oct 2025 11:02:09 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Ana,
+
+To be honest I only started using it yesterday.
+– I did see the filters, but the branch filter is a bit hidden, it took me a while to find it.
+– About performance, some days it’s fine and other days it feels “super slow” (I didn’t measure, but it definitely feels slow).
+– As for metrics, it might be useful to see the average ticket right on the main screen.
+
+I haven’t checked all the reports yet, so I might see more things later.
+
+Regards,
+Carlos
+
+<div class="quoted">
+On Wed, Oct 1, 2025 at 9:14 AM, Ana Torres &lt;ana.torres@acme.com&gt; wrote:
+&gt; We’d love to hear your opinion about the new sales dashboard...
+</div>
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: summary_forwarded_to_lead | timestamp: 2025-10-01 11:35:40 | actor: team_member | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Ana Torres" &lt;ana.torres@acme.com&gt;</div>
+      <div><strong>To:</strong> "Laura Méndez" &lt;laura.mendez@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Feedback summary – Client Carlos López – Sales dashboard</div>
+      <div><strong>Date:</strong> Wed, 01 Oct 2025 11:35:40 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Laura,
+
+Here’s a summary of the feedback from Carlos López (Retail Norte client) about the new dashboard:
+
+- He can find the filters, but says the branch filter is “hidden”.
+- He perceives intermittent performance: some days okay, other days “very slow” (no exact measurements).
+- Suggests adding average ticket on the main screen.
+- He hasn’t checked all reports yet but says he’ll keep testing.
+
+Case status: open, waiting for your indication to close or follow up.
+
+Best,
+Ana
+
+(Previous thread with the client attached)
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: lead_approved | timestamp: 2025-10-01 12:01:05 | actor: team_lead | status: closed]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Laura Méndez" &lt;laura.mendez@acme.com&gt;</div>
+      <div><strong>To:</strong> "Ana Torres" &lt;ana.torres@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Feedback summary – Client Carlos López – Sales dashboard</div>
+      <div><strong>Date:</strong> Wed, 01 Oct 2025 12:01:05 -0600</div>
+    </div>
+    <div class="email-body">
+Thanks, Ana.
+
+This level of detail is enough for now.
+Let’s add to the backlog:
+- Improve visibility of the branch filter.
+- Evaluate performance during peak hours.
+- Add average ticket to the main panel.
+
+You can close this case and move on to the next client.
+
+Laura
+
+<div class="quoted">
+On Wed, Oct 1, 2025 at 11:35 AM, Ana Torres &lt;ana.torres@acme.com&gt; wrote:
+&gt; Here’s a summary of the feedback from Carlos López...
+</div>
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== THREAD 02 ===================== -->
+<div class="thread">
+  <h2>THREAD 02 – Mobile app push notifications (long with follow-up)</h2>
+
+  <div class="event-meta">
+    [EVENT: question_sent | timestamp: 2025-10-03 08:47:12 | actor: team_member | status: open]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>To:</strong> "Mariana Pérez" &lt;mariana.perez@client.com&gt;</div>
+      <div><strong>Subject:</strong> Feedback about mobile app notifications</div>
+      <div><strong>Date:</strong> Fri, 03 Oct 2025 08:47:12 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Mariana,
+
+I’m Diego from the mobile product team.
+We’re reviewing the experience of push notifications in the app.
+
+Could you help us by answering these questions?
+1. On a normal day, how often do you receive notifications from us?
+2. Do they feel useful or mostly “noise”?
+3. Have you had any issues disabling or configuring them?
+
+Whatever you can share is perfect, it doesn’t have to be very detailed.
+
+Best,
+Diego
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: customer_reply_received | timestamp: 2025-10-03 13:19:03 | actor: customer | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Mariana Pérez" &lt;mariana.perez@client.com&gt;</div>
+      <div><strong>To:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Feedback about mobile app notifications</div>
+      <div><strong>Date:</strong> Fri, 03 Oct 2025 13:19:03 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Diego,
+
+I don’t have the exact number, but I feel I get a lot of them.
+Especially “cart reminder” and “deal of the day”, that’s a bit annoying.
+
+Configuring them is a bit confusing; I opened the menu and didn’t really understand the difference between “alerts” and “important messages”. In the end I just turned almost everything off.
+
+Not sure if I answered everything, but that’s what I remember.
+
+Mariana
+
+<div class="quoted">
+On Fri, Oct 3, 2025 at 8:47 AM, Diego Ramírez &lt;diego.ramirez@acme.com&gt; wrote:
+&gt; On a normal day, how often do you receive notifications...?
+</div>
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: summary_forwarded_to_lead | timestamp: 2025-10-03 14:02:55 | actor: team_member | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>To:</strong> "José Martínez" &lt;jose.martinez@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Feedback summary – Push notifications – Client Mariana Pérez</div>
+      <div><strong>Date:</strong> Fri, 03 Oct 2025 14:02:55 -0600</div>
+    </div>
+    <div class="email-body">
+Hi José,
+
+Here’s the summary of Mariana Pérez’s feedback on push notifications:
+
+- She feels she gets “a lot” of notifications, especially cart reminders and daily promotions.
+- She says the settings menu is confusing (doesn’t understand “alerts” vs “important messages”).
+- She ended up disabling almost everything out of frustration.
+
+I suggest:
+1. Reducing the frequency of marketing notifications for this segment.
+2. Simplifying the settings menu with clearer labels.
+
+Let me know if you want us to follow up.
+
+Diego
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: lead_requested_followup | timestamp: 2025-10-03 14:25:31 | actor: team_lead | status: open]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "José Martínez" &lt;jose.martinez@acme.com&gt;</div>
+      <div><strong>To:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Feedback summary – Push notifications – Client Mariana Pérez</div>
+      <div><strong>Date:</strong> Fri, 03 Oct 2025 14:25:31 -0600</div>
+    </div>
+    <div class="email-body">
+Thanks, Diego.
+
+Before making product decisions, please check whether the issue is consistent:
+– Ask if the notifications that bother her most are every day or only during campaigns.
+– Confirm whether she has ever considered uninstalling the app because of this.
+
+After that, send me a brief follow-up summary.
+
+José
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: followup_sent_to_customer | timestamp: 2025-10-03 15:02:10 | actor: team_member | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>To:</strong> "Mariana Pérez" &lt;mariana.perez@client.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Feedback about mobile app notifications</div>
+      <div><strong>Date:</strong> Fri, 03 Oct 2025 15:02:10 -0600</div>
+    </div>
+    <div class="email-body">
+Hi again, Mariana,
+
+Thanks a lot for your previous reply! Just a couple of quick follow-up questions:
+
+1. Do you feel the annoying notifications come almost every day, or only during certain periods (for example, special promotions)?
+2. Did you ever think about uninstalling the app because of this, or did you only disable notifications?
+
+This helps us a lot to prioritize changes.
+
+Best,
+Diego
+
+<div class="quoted">
+On Fri, Oct 3, 2025 at 1:19 PM, Mariana Pérez &lt;mariana.perez@client.com&gt; wrote:
+&gt; Configuring them is a bit confusing...
+</div>
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: customer_followup_reply | timestamp: 2025-10-03 17:40:55 | actor: customer | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Mariana Pérez" &lt;mariana.perez@client.com&gt;</div>
+      <div><strong>To:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Feedback about mobile app notifications</div>
+      <div><strong>Date:</strong> Fri, 03 Oct 2025 17:40:55 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Diego,
+
+Quick answers:
+
+1. I’d say it’s almost daily, especially the cart reminders.
+2. I haven’t uninstalled the app, but I did think about it twice. In the end I preferred to turn notifications off because the app is useful for buying.
+
+Hope this helps.
+
+Mariana
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: summary_forwarded_to_lead | timestamp: 2025-10-03 18:05:12 | actor: team_member | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>To:</strong> "José Martínez" &lt;jose.martinez@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Follow-up summary – Push notifications – Mariana Pérez</div>
+      <div><strong>Date:</strong> Fri, 03 Oct 2025 18:05:12 -0600</div>
+    </div>
+    <div class="email-body">
+Hi José,
+
+Follow-up on Mariana’s case:
+
+- Annoying notifications: almost daily, especially cart reminders.
+- She did consider uninstalling the app, but decided to disable notifications instead because the app is still useful for purchases.
+
+I propose:
+- Lower frequency of cart reminder notifications.
+- Adjust segmentation so she doesn’t get daily promotions.
+
+Let me know your thoughts.
+
+Diego
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: lead_approved | timestamp: 2025-10-03 18:21:47 | actor: team_lead | status: closed]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "José Martínez" &lt;jose.martinez@acme.com&gt;</div>
+      <div><strong>To:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Follow-up summary – Push notifications – Mariana Pérez</div>
+      <div><strong>Date:</strong> Fri, 03 Oct 2025 18:21:47 -0600</div>
+    </div>
+    <div class="email-body">
+Perfect, Diego.
+
+This is enough.
+I approve including this case in the Q4 notification strategy adjustments.
+
+You can mark the case as closed.
+
+José
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== THREAD 03 ===================== -->
+<div class="thread">
+  <h2>THREAD 03 – Excel export (short, no team lead)</h2>
+
+  <div class="event-meta">
+    [EVENT: question_sent | timestamp: 2025-10-05 10:10:00 | actor: team_member | status: open]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Sofía Herrera" &lt;sofia.herrera@acme.com&gt;</div>
+      <div><strong>To:</strong> "Luis Gómez" &lt;luis.gomez@client.com&gt;</div>
+      <div><strong>Subject:</strong> Opinion about the new Excel export</div>
+      <div><strong>Date:</strong> Sun, 05 Oct 2025 10:10:00 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Luis,
+
+We just released a new version of the Excel export in the reports module.
+
+Could you briefly tell me:
+1. If the file opens correctly in your version of Excel.
+2. If the columns are clear or if you had to reorganize everything.
+
+2–3 lines are perfect.
+
+Best,
+Sofía
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: customer_reply_received | timestamp: 2025-10-05 11:05:42 | actor: customer | status: closed]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Luis Gómez" &lt;luis.gomez@client.com&gt;</div>
+      <div><strong>To:</strong> "Sofía Herrera" &lt;sofia.herrera@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Opinion about the new Excel export</div>
+      <div><strong>Date:</strong> Sun, 05 Oct 2025 11:05:42 -0600</div>
+    </div>
+    <div class="email-body">
+Hi,
+
+The file opens fine, but the date format changes (it shows up as text).
+The columns are clearer than before, I barely had to move anything.
+
+From my side it’s all good if you fix the date formatting.
+
+Luis
+
+<div class="quoted">
+On Sun, Oct 5, 2025 at 10:10 AM, Sofía Herrera &lt;sofia.herrera@acme.com&gt; wrote:
+&gt; Could you briefly tell me...?
+</div>
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== THREAD 04 ===================== -->
+<div class="thread">
+  <h2>THREAD 04 – Report module loading times (medium)</h2>
+
+  <div class="event-meta">
+    [EVENT: question_sent | timestamp: 2025-10-06 09:00:05 | actor: team_member | status: open]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Miguel Pineda" &lt;miguel.pineda@acme.com&gt;</div>
+      <div><strong>To:</strong> "Fernanda Díaz" &lt;fernanda.diaz@client.com&gt;</div>
+      <div><strong>Subject:</strong> Follow-up on report loading times</div>
+      <div><strong>Date:</strong> Mon, 06 Oct 2025 09:00:05 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Fernanda,
+
+We heard that the reports module sometimes takes a long time to load in your account.
+
+Could you let us know:
+1. Approximately how long it takes to open your heaviest report.
+2. Whether this happens only at certain times of day or all day long.
+3. If other users on your team have mentioned the same issue.
+
+Thanks for your help,
+Miguel
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: customer_reply_received | timestamp: 2025-10-06 12:17:39 | actor: customer | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Fernanda Díaz" &lt;fernanda.diaz@client.com&gt;</div>
+      <div><strong>To:</strong> "Miguel Pineda" &lt;miguel.pineda@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Follow-up on report loading times</div>
+      <div><strong>Date:</strong> Mon, 06 Oct 2025 12:17:39 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Miguel,
+
+I haven’t timed it, but the monthly sales report takes quite a while, I think more than 1 minute.
+It happens mainly in the morning, when we open the whole system.
+
+From the rest of the team, I know at least 2 people have complained, but I don’t have their info handy.
+
+Fernanda
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: summary_forwarded_to_lead | timestamp: 2025-10-06 13:05:00 | actor: team_member | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Miguel Pineda" &lt;miguel.pineda@acme.com&gt;</div>
+      <div><strong>To:</strong> "Patricia León" &lt;patricia.leon@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Summary – Performance issue in reports – Client Fernanda Díaz</div>
+      <div><strong>Date:</strong> Mon, 06 Oct 2025 13:05:00 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Patricia,
+
+Summary of Fernanda Díaz’s case (Ventas Sur client):
+
+- Monthly sales report takes ~1 minute or more.
+- It mainly happens in the morning.
+- She says at least 2 other users have the same issue.
+
+Suggestion: review logs between 8:00–10:00 and check if it’s a usage peak issue.
+
+Should we leave it like this or ask for additional follow-up?
+
+Miguel
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: lead_approved | timestamp: 2025-10-06 13:25:12 | actor: team_lead | status: closed]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Patricia León" &lt;patricia.leon@acme.com&gt;</div>
+      <div><strong>To:</strong> "Miguel Pineda" &lt;miguel.pineda@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Summary – Performance issue in reports – Client Fernanda Díaz</div>
+      <div><strong>Date:</strong> Mon, 06 Oct 2025 13:25:12 -0600</div>
+    </div>
+    <div class="email-body">
+Thanks, Miguel.
+
+This level of detail is fine.
+I’ll prioritize it in the performance sprint, and we can close the case with the client (no extra follow-up needed for now).
+
+Patricia
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== THREAD 05 ===================== -->
+<div class="thread">
+  <h2>THREAD 05 – Advanced search (short with evasive answer)</h2>
+
+  <div class="event-meta">
+    [EVENT: question_sent | timestamp: 2025-10-07 15:10:44 | actor: team_member | status: open]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Valeria Núñez" &lt;valeria.nunez@acme.com&gt;</div>
+      <div><strong>To:</strong> "Roberto Aguilar" &lt;roberto.aguilar@client.com&gt;</div>
+      <div><strong>Subject:</strong> Feedback about the new advanced search</div>
+      <div><strong>Date:</strong> Tue, 07 Oct 2025 15:10:44 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Roberto,
+
+A few days ago we released advanced search in the product catalog.
+
+Has it been useful?
+Is there anything that was hard to understand or use?
+
+Best,
+Valeria
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: customer_reply_received | timestamp: 2025-10-07 18:59:10 | actor: customer | status: closed]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Roberto Aguilar" &lt;roberto.aguilar@client.com&gt;</div>
+      <div><strong>To:</strong> "Valeria Núñez" &lt;valeria.nunez@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Feedback about the new advanced search</div>
+      <div><strong>Date:</strong> Tue, 07 Oct 2025 18:59:10 -0600</div>
+    </div>
+    <div class="email-body">
+Hi,
+
+I haven’t used it much, I usually just search by code like before.
+I tried the filters once, but honestly I didn’t pay much attention.
+
+When I have more time I’ll take a better look.
+
+Roberto
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== THREAD 06 ===================== -->
+<div class="thread">
+  <h2>THREAD 06 – Support ticket panel (long)</h2>
+
+  <div class="event-meta">
+    [EVENT: question_sent | timestamp: 2025-10-08 09:30:00 | actor: team_member | status: open]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>To:</strong> "Lucía Ortega" &lt;lucia.ortega@client.com&gt;</div>
+      <div><strong>Subject:</strong> Follow-up on the new ticket panel</div>
+      <div><strong>Date:</strong> Wed, 08 Oct 2025 09:30:00 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Lucía,
+
+I’m Jorge from the customer success team.
+We recently activated the new support ticket panel in your account.
+
+I’d like to know:
+1. If the status of each ticket is clear (open, in progress, resolved).
+2. If you can quickly find old tickets.
+3. If anything has confused you or that you simply don’t like.
+
+Thanks for your time,
+Jorge
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: customer_reply_received | timestamp: 2025-10-08 10:45:18 | actor: customer | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Lucía Ortega" &lt;lucia.ortega@client.com&gt;</div>
+      <div><strong>To:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Follow-up on the new ticket panel</div>
+      <div><strong>Date:</strong> Wed, 08 Oct 2025 10:45:18 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Jorge,
+
+Overall it looks better than before.
+– The status is understandable, but sometimes I don’t really know when a ticket is actually closed.
+– It’s hard for me to search for old tickets, the date filter is not very intuitive.
+– What I don’t like is that there are too many colors, I get a bit lost.
+
+Lucía
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: summary_forwarded_to_lead | timestamp: 2025-10-08 11:20:40 | actor: team_member | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>To:</strong> "Raúl Villalobos" &lt;raul.villalobos@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Summary – Ticket panel feedback – Lucía Ortega</div>
+      <div><strong>Date:</strong> Wed, 08 Oct 2025 11:20:40 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Raúl,
+
+Summary of Lucía’s feedback:
+
+- Ticket status is clear, but she can’t easily tell when a ticket is really closed.
+- Difficulty searching old tickets (date filter not intuitive).
+- Too many colors in the panel; it’s confusing for her.
+
+Should we request follow-up or is this enough?
+
+Jorge
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: lead_requested_followup | timestamp: 2025-10-08 11:45:03 | actor: team_lead | status: open]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Raúl Villalobos" &lt;raul.villalobos@acme.com&gt;</div>
+      <div><strong>To:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Summary – Ticket panel feedback – Lucía Ortega</div>
+      <div><strong>Date:</strong> Wed, 08 Oct 2025 11:45:03 -0600</div>
+    </div>
+    <div class="email-body">
+Jorge,
+
+Ask her for more detail about how she interprets the colors and what she’d expect to see to better distinguish closed tickets.
+Then send me the updated summary.
+
+Raúl
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: followup_sent_to_customer | timestamp: 2025-10-08 12:10:22 | actor: team_member | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>To:</strong> "Lucía Ortega" &lt;lucia.ortega@client.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Follow-up on the new ticket panel</div>
+      <div><strong>Date:</strong> Wed, 08 Oct 2025 12:10:22 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Lucía,
+
+Thanks for your previous feedback 🙌.
+Just to better understand:
+
+1. When you say there are too many colors, which ones confuse you the most (for example, orange, purple, etc.)?
+2. What would help you better distinguish tickets that are already closed? (icon, bigger label, extra column, etc.)
+
+Your comments are very useful for us.
+
+Best,
+Jorge
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: customer_followup_reply | timestamp: 2025-10-08 13:05:10 | actor: customer | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Lucía Ortega" &lt;lucia.ortega@client.com&gt;</div>
+      <div><strong>To:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Follow-up on the new ticket panel</div>
+      <div><strong>Date:</strong> Wed, 08 Oct 2025 13:05:10 -0600</div>
+    </div>
+    <div class="email-body">
+Hi,
+
+Mainly orange and purple look too similar, and I don’t remember which one means “waiting for reply” and which one is “under review”.
+
+For closed tickets, I’d like them to show in a light gray and clearly say “CLOSED” instead of just an icon.
+
+Lucía
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: summary_forwarded_to_lead | timestamp: 2025-10-08 13:40:32 | actor: team_member | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>To:</strong> "Raúl Villalobos" &lt;raul.villalobos@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Follow-up – Ticket panel colors feedback – Lucía Ortega</div>
+      <div><strong>Date:</strong> Wed, 08 Oct 2025 13:40:32 -0600</div>
+    </div>
+    <div class="email-body">
+Raúl,
+
+Follow-up from Lucía:
+
+- Colors that confuse her most: orange and purple (she doesn’t remember what each one means).
+- She’d like closed tickets to be in light gray with an explicit “CLOSED” label.
+
+I suggest adjusting the color palette and adding that textual label.
+
+Jorge
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: lead_approved | timestamp: 2025-10-08 14:00:00 | actor: team_lead | status: closed]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Raúl Villalobos" &lt;raul.villalobos@acme.com&gt;</div>
+      <div><strong>To:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Follow-up – Ticket panel colors feedback – Lucía Ortega</div>
+      <div><strong>Date:</strong> Wed, 08 Oct 2025 14:00:00 -0600</div>
+    </div>
+    <div class="email-body">
+Perfect.
+
+Approved to include in the next UI iteration.
+Thanks for the detailed follow-up.
+
+Raúl
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== THREAD 07 ===================== -->
+<div class="thread">
+  <h2>THREAD 07 – Billing module (medium, partial answer)</h2>
+
+  <div class="event-meta">
+    [EVENT: question_sent | timestamp: 2025-10-09 09:15:11 | actor: team_member | status: open]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Elena Cruz" &lt;elena.cruz@acme.com&gt;</div>
+      <div><strong>To:</strong> "Javier Ruiz" &lt;javier.ruiz@client.com&gt;</div>
+      <div><strong>Subject:</strong> Feedback about the new billing module</div>
+      <div><strong>Date:</strong> Thu, 09 Oct 2025 09:15:11 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Javier,
+
+I’d like to hear about your experience with the new billing module:
+
+1. Was it easy to create an invoice from scratch?
+2. Did you get any errors when stamping or validating the tax ID?
+3. Is there anything you would definitely change on the main screen?
+
+Best regards,
+Elena
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: customer_reply_received | timestamp: 2025-10-09 12:00:40 | actor: customer | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Javier Ruiz" &lt;javier.ruiz@client.com&gt;</div>
+      <div><strong>To:</strong> "Elena Cruz" &lt;elena.cruz@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Feedback about the new billing module</div>
+      <div><strong>Date:</strong> Thu, 09 Oct 2025 12:00:40 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Elena,
+
+Creating the invoice wasn’t too bad, although at first I couldn’t find where to set the payment method.
+I barely had stamping errors, just once because I typed the tax ID wrong (my fault).
+
+As for the main screen I’m not sure what to say, I just feel it’s “a bit cluttered”.
+
+Javier
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: summary_forwarded_to_lead | timestamp: 2025-10-09 13:10:05 | actor: team_member | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Elena Cruz" &lt;elena.cruz@acme.com&gt;</div>
+      <div><strong>To:</strong> "Teresa Cano" &lt;teresa.cano@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Summary – Billing module feedback – Javier Ruiz</div>
+      <div><strong>Date:</strong> Thu, 09 Oct 2025 13:10:05 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Teresa,
+
+Summary of Javier’s case:
+
+- He had trouble finding the payment method field when creating an invoice.
+- Only one stamping error due to a mistyped tax ID (user error).
+- He perceives the main screen as “a bit cluttered” but without specific details.
+
+I suggest adding to the backlog: improve visibility of the payment method and simplify visual elements.
+
+Is this enough for you?
+
+Elena
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: lead_approved | timestamp: 2025-10-09 13:25:47 | actor: team_lead | status: closed]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Teresa Cano" &lt;teresa.cano@acme.com&gt;</div>
+      <div><strong>To:</strong> "Elena Cruz" &lt;elena.cruz@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Summary – Billing module feedback – Javier Ruiz</div>
+      <div><strong>Date:</strong> Thu, 09 Oct 2025 13:25:47 -0600</div>
+    </div>
+    <div class="email-body">
+Yes, this is fine.
+
+Approved as a usability improvement. Please document it and close the case.
+
+Teresa
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== THREAD 08 ===================== -->
+<div class="thread">
+  <h2>THREAD 08 – Offline inventory app (short, delayed reply)</h2>
+
+  <div class="event-meta">
+    [EVENT: question_sent | timestamp: 2025-10-10 16:25:00 | actor: team_member | status: open]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Ricardo Salas" &lt;ricardo.salas@acme.com&gt;</div>
+      <div><strong>To:</strong> "Paola Medina" &lt;paola.medina@client.com&gt;</div>
+      <div><strong>Subject:</strong> Opinion about the offline inventory mode</div>
+      <div><strong>Date:</strong> Fri, 10 Oct 2025 16:25:00 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Paola,
+
+I’m Ricardo from the product team.
+A few weeks ago we enabled the offline mode in the inventory app.
+
+Has it worked well for you when you don’t have a connection?
+Have you lost any data during sync?
+
+Regards,
+Ricardo
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: customer_reply_received | timestamp: 2025-10-14 09:02:18 | actor: customer | status: closed]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Paola Medina" &lt;paola.medina@client.com&gt;</div>
+      <div><strong>To:</strong> "Ricardo Salas" &lt;ricardo.salas@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Opinion about the offline inventory mode</div>
+      <div><strong>Date:</strong> Tue, 14 Oct 2025 09:02:18 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Ricardo,
+
+Sorry for replying so late, the email slipped my mind 😅.
+
+I’ve used it a few times, and when I did, it did save the records and synced fine afterwards.
+I only noticed that syncing is slow if I do a lot of movements (I didn’t measure how much).
+
+Paola
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== THREAD 09 ===================== -->
+<div class="thread">
+  <h2>THREAD 09 – Integration API (medium, technical)</h2>
+
+  <div class="event-meta">
+    [EVENT: question_sent | timestamp: 2025-10-11 08:40:33 | actor: team_member | status: open]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Ana Torres" &lt;ana.torres@acme.com&gt;</div>
+      <div><strong>To:</strong> "Andrés Campos" &lt;andres.campos@client.com&gt;</div>
+      <div><strong>Subject:</strong> Follow-up on the new integration API usage</div>
+      <div><strong>Date:</strong> Sat, 11 Oct 2025 08:40:33 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Andrés,
+
+We’d like to know how things went with the new version of our API for integrating with your ERP.
+
+1. Were you able to implement the orders endpoint without issues?
+2. Was the authentication documentation clear?
+3. Anything that blocked you or made you waste time?
+
+Best,
+Ana
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: customer_reply_received | timestamp: 2025-10-11 11:01:10 | actor: customer | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Andrés Campos" &lt;andres.campos@client.com&gt;</div>
+      <div><strong>To:</strong> "Ana Torres" &lt;ana.torres@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Follow-up on the new integration API usage</div>
+      <div><strong>Date:</strong> Sat, 11 Oct 2025 11:01:10 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Ana,
+
+I implemented the orders endpoint, but I had to guess some fields because they weren’t clearly documented.
+Authentication is fine, though the cURL example took me a bit to understand.
+
+What took the most time was debugging a 400 error with no clear message.
+
+Andrés
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: summary_forwarded_to_lead | timestamp: 2025-10-11 11:35:27 | actor: team_member | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Ana Torres" &lt;ana.torres@acme.com&gt;</div>
+      <div><strong>To:</strong> "Laura Méndez" &lt;laura.mendez@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Summary – Integration API usage – Andrés Campos</div>
+      <div><strong>Date:</strong> Sat, 11 Oct 2025 11:35:27 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Laura,
+
+Summary of Andrés’ feedback:
+
+- Implemented the orders endpoint but had to guess some fields (incomplete documentation).
+- Authentication OK, but cURL example not very clear.
+- He lost time debugging a 400 error without a detailed message.
+
+I propose:
+- Completing the field descriptions in the docs.
+- Improving error messages for 4xx codes.
+
+Shall we leave it like this?
+
+Ana
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: lead_approved | timestamp: 2025-10-11 11:50:00 | actor: team_lead | status: closed]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Laura Méndez" &lt;laura.mendez@acme.com&gt;</div>
+      <div><strong>To:</strong> "Ana Torres" &lt;ana.torres@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Summary – Integration API usage – Andrés Campos</div>
+      <div><strong>Date:</strong> Sat, 11 Oct 2025 11:50:00 -0600</div>
+    </div>
+    <div class="email-body">
+Yes, Ana.
+
+I approve adding these items to the technical documentation improvements and closing the case.
+
+Laura
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== THREAD 10 ===================== -->
+<div class="thread">
+  <h2>THREAD 10 – Branch performance report (short, 2 emails)</h2>
+
+  <div class="event-meta">
+    [EVENT: question_sent | timestamp: 2025-10-12 10:00:00 | actor: team_member | status: open]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Sofía Herrera" &lt;sofia.herrera@acme.com&gt;</div>
+      <div><strong>To:</strong> "Daniela Flores" &lt;daniela.flores@client.com&gt;</div>
+      <div><strong>Subject:</strong> Feedback about the branch performance report</div>
+      <div><strong>Date:</strong> Sun, 12 Oct 2025 10:00:00 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Daniela,
+
+We want to know if the new branch performance report is helping you.
+
+Do you find the comparisons between branches and productivity indicators clear?
+Would you change anything about the format?
+
+Best,
+Sofía
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: customer_reply_received | timestamp: 2025-10-12 10:40:45 | actor: customer | status: closed]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Daniela Flores" &lt;daniela.flores@client.com&gt;</div>
+      <div><strong>To:</strong> "Sofía Herrera" &lt;sofia.herrera@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Feedback about the branch performance report</div>
+      <div><strong>Date:</strong> Sun, 12 Oct 2025 10:40:45 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Sofía,
+
+Overall it’s good. I’d only like to be able to sort branches by indicator (for example, from highest to lowest productivity).
+Other than that, everything is clear.
+
+Daniela
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== THREAD 11 ===================== -->
+<div class="thread">
+  <h2>THREAD 11 – In-app help center (medium, vague answer)</h2>
+
+  <div class="event-meta">
+    [EVENT: question_sent | timestamp: 2025-10-13 09:05:12 | actor: team_member | status: open]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>To:</strong> "Sergio Navarro" &lt;sergio.navarro@client.com&gt;</div>
+      <div><strong>Subject:</strong> Follow-up on the new in-app help center</div>
+      <div><strong>Date:</strong> Mon, 13 Oct 2025 09:05:12 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Sergio,
+
+We recently enabled the help center inside the app (FAQ, tutorials, etc.).
+
+Have you used it?
+If yes, did it help you solve your questions or did you still end up contacting support?
+
+Thanks,
+Diego
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: customer_reply_received | timestamp: 2025-10-13 15:30:02 | actor: customer | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Sergio Navarro" &lt;sergio.navarro@client.com&gt;</div>
+      <div><strong>To:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Follow-up on the new in-app help center</div>
+      <div><strong>Date:</strong> Mon, 13 Oct 2025 15:30:02 -0600</div>
+    </div>
+    <div class="email-body">
+Hi,
+
+I glanced at it, but I almost always prefer to use the live chat.
+I read one FAQ but then didn’t keep going.
+
+I’m not really sure if it helped me, to be honest.
+
+Sergio
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: summary_forwarded_to_lead | timestamp: 2025-10-13 16:00:00 | actor: team_member | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>To:</strong> "José Martínez" &lt;jose.martinez@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Summary – Help center usage – Sergio Navarro</div>
+      <div><strong>Date:</strong> Mon, 13 Oct 2025 16:00:00 -0600</div>
+    </div>
+    <div class="email-body">
+José,
+
+Summary of Sergio’s case:
+
+- He just glanced at the help center, doesn’t use it much.
+- He prefers live chat.
+- Not sure if it was useful; his answer is vague.
+
+I suggest using this case as an example of low help center adoption.
+
+Diego
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: lead_approved | timestamp: 2025-10-13 16:20:10 | actor: team_lead | status: closed]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "José Martínez" &lt;jose.martinez@acme.com&gt;</div>
+      <div><strong>To:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Summary – Help center usage – Sergio Navarro</div>
+      <div><strong>Date:</strong> Mon, 13 Oct 2025 16:20:10 -0600</div>
+    </div>
+    <div class="email-body">
+Thanks, Diego.
+
+Approved.
+Let’s log this for our analysis of preferred channels (chat vs FAQ).
+
+José
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== THREAD 12 ===================== -->
+<div class="thread">
+  <h2>THREAD 12 – Date filters in financial dashboard (long, client error)</h2>
+
+  <div class="event-meta">
+    [EVENT: question_sent | timestamp: 2025-10-14 08:50:00 | actor: team_member | status: open]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Valeria Núñez" &lt;valeria.nunez@acme.com&gt;</div>
+      <div><strong>To:</strong> "Karla Jiménez" &lt;karla.jimenez@client.com&gt;</div>
+      <div><strong>Subject:</strong> Feedback about the date filters in the financial dashboard</div>
+      <div><strong>Date:</strong> Tue, 14 Oct 2025 08:50:00 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Karla,
+
+I’d like to know how the new date filters in the financial dashboard are working for you.
+
+1. Are they easy to understand (today, yesterday, last 7 days, custom range)?
+2. Have you noticed any strange data when changing the date range?
+
+Best,
+Valeria
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: customer_reply_received | timestamp: 2025-10-14 09:25:17 | actor: customer | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Karla Jiménez" &lt;karla.jimenez@client.com&gt;</div>
+      <div><strong>To:</strong> "Valeria Núñez" &lt;valeria.nunez@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Feedback about the date filters in the financial dashboard</div>
+      <div><strong>Date:</strong> Tue, 14 Oct 2025 09:25:17 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Valeria,
+
+At first I thought the filter wasn’t working because I didn’t see any data, but I later realized I had set the range backwards (from 12/31 to 01/01).
+Other than that, they’re clear.
+
+Once I thought data was missing, but I think it was because the day hadn’t closed yet.
+
+Karla
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: summary_forwarded_to_lead | timestamp: 2025-10-14 09:55:00 | actor: team_member | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Valeria Núñez" &lt;valeria.nunez@acme.com&gt;</div>
+      <div><strong>To:</strong> "Teresa Cano" &lt;teresa.cano@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Summary – Date filters in financial dashboard – Karla Jiménez</div>
+      <div><strong>Date:</strong> Tue, 14 Oct 2025 09:55:00 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Teresa,
+
+Summary of Karla’s case:
+
+- At first she thought the filter was broken, but it was due to reversed dates (start/end inverted).
+- After that, she understood it and finds it clear.
+- Once she thought data was missing, but the day hadn’t closed yet.
+
+I suggest:
+- Adding a validation when the start date is later than the end date.
+- Showing a notice if the current day’s data is still in progress.
+
+Is this sufficient?
+
+Valeria
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: lead_approved | timestamp: 2025-10-14 10:10:10 | actor: team_lead | status: closed]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Teresa Cano" &lt;teresa.cano@acme.com&gt;</div>
+      <div><strong>To:</strong> "Valeria Núñez" &lt;valeria.nunez@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Summary – Date filters in financial dashboard – Karla Jiménez</div>
+      <div><strong>Date:</strong> Tue, 14 Oct 2025 10:10:10 -0600</div>
+    </div>
+    <div class="email-body">
+Yes, very clear.
+
+Approved to include as a validation improvement in the backlog.
+
+Teresa
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== THREAD 13 ===================== -->
+<div class="thread">
+  <h2>THREAD 13 – Internal comments feature (short, 3 emails)</h2>
+
+  <div class="event-meta">
+    [EVENT: question_sent | timestamp: 2025-10-15 09:45:00 | actor: team_member | status: open]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Miguel Pineda" &lt;miguel.pineda@acme.com&gt;</div>
+      <div><strong>To:</strong> "Carlos López" &lt;carlos.lopez@client.com&gt;</div>
+      <div><strong>Subject:</strong> Opinion about the new internal comments section</div>
+      <div><strong>Date:</strong> Wed, 15 Oct 2025 09:45:00 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Carlos,
+
+We added an internal comments section to each order (only visible to your team).
+
+Have you used it?
+If yes, does it help you coordinate better with your team, or do you barely use it?
+
+Miguel
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: customer_reply_received | timestamp: 2025-10-15 10:20:30 | actor: customer | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Carlos López" &lt;carlos.lopez@client.com&gt;</div>
+      <div><strong>To:</strong> "Miguel Pineda" &lt;miguel.pineda@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Opinion about the new internal comments section</div>
+      <div><strong>Date:</strong> Wed, 15 Oct 2025 10:20:30 -0600</div>
+    </div>
+    <div class="email-body">
+Hi,
+
+We use it only on some complicated orders.
+It helps, but people sometimes prefer WhatsApp, it’s already a habit.
+
+Carlos
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: summary_forwarded_to_lead | timestamp: 2025-10-15 11:00:00 | actor: team_member | status: closed]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Miguel Pineda" &lt;miguel.pineda@acme.com&gt;</div>
+      <div><strong>To:</strong> "Patricia León" &lt;patricia.leon@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Summary – Internal comments – Client Carlos López</div>
+      <div><strong>Date:</strong> Wed, 15 Oct 2025 11:00:00 -0600</div>
+    </div>
+    <div class="email-body">
+Patricia,
+
+Carlos uses internal comments only for complex orders, but the main channel is still WhatsApp.
+I’m logging it as partial usage with no need for additional follow-up.
+
+Miguel
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== THREAD 14 ===================== -->
+<div class="thread">
+  <h2>THREAD 14 – Dark mode UI (medium with short follow-up)</h2>
+
+  <div class="event-meta">
+    [EVENT: question_sent | timestamp: 2025-10-16 08:35:00 | actor: team_member | status: open]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Elena Cruz" &lt;elena.cruz@acme.com&gt;</div>
+      <div><strong>To:</strong> "Mariana Pérez" &lt;mariana.perez@client.com&gt;</div>
+      <div><strong>Subject:</strong> Feedback about the new dark mode</div>
+      <div><strong>Date:</strong> Thu, 16 Oct 2025 08:35:00 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Mariana,
+
+We enabled dark mode on the web platform.
+
+Have you tried it?
+Do you find it more comfortable than light mode, or you don’t notice much difference?
+
+Best,
+Elena
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: customer_reply_received | timestamp: 2025-10-16 09:10:00 | actor: customer | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Mariana Pérez" &lt;mariana.perez@client.com&gt;</div>
+      <div><strong>To:</strong> "Elena Cruz" &lt;elena.cruz@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Feedback about the new dark mode</div>
+      <div><strong>Date:</strong> Thu, 16 Oct 2025 09:10:00 -0600</div>
+    </div>
+    <div class="email-body">
+Hi,
+
+Yes, I tried it. I like it for working at night, but during the day I still use light mode.
+One weird thing is that some tables look very high-contrast, it makes my eyes a bit tired.
+
+Mariana
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: summary_forwarded_to_lead | timestamp: 2025-10-16 09:40:20 | actor: team_member | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Elena Cruz" &lt;elena.cruz@acme.com&gt;</div>
+      <div><strong>To:</strong> "Teresa Cano" &lt;teresa.cano@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Summary – Dark mode – Mariana Pérez</div>
+      <div><strong>Date:</strong> Thu, 16 Oct 2025 09:40:20 -0600</div>
+    </div>
+    <div class="email-body">
+Teresa,
+
+Mariana uses dark mode only at night; during the day she prefers light mode.
+She says some tables have too strong a contrast and it tires her eyes.
+
+I suggest reviewing the color palette for tables specifically.
+
+Elena
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: lead_approved | timestamp: 2025-10-16 10:00:00 | actor: team_lead | status: closed]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Teresa Cano" &lt;teresa.cano@acme.com&gt;</div>
+      <div><strong>To:</strong> "Elena Cruz" &lt;elena.cruz@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Summary – Dark mode – Mariana Pérez</div>
+      <div><strong>Date:</strong> Thu, 16 Oct 2025 10:00:00 -0600</div>
+    </div>
+    <div class="email-body">
+Agreed, Elena.
+
+Approved for the next design iteration.
+Please close the case.
+
+Teresa
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== THREAD 15 ===================== -->
+<div class="thread">
+  <h2>THREAD 15 – Pending task reminders (long, customer confusion)</h2>
+
+  <div class="event-meta">
+    [EVENT: question_sent | timestamp: 2025-10-17 09:00:00 | actor: team_member | status: open]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>To:</strong> "Luis Gómez" &lt;luis.gomez@client.com&gt;</div>
+      <div><strong>Subject:</strong> Follow-up on pending task reminders</div>
+      <div><strong>Date:</strong> Fri, 17 Oct 2025 09:00:00 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Luis,
+
+We recently activated automatic pending task reminders in your account.
+
+Have you been receiving them?
+If yes, do they arrive at helpful times, or do you feel they’re not very useful?
+
+Best,
+Jorge
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: customer_reply_received | timestamp: 2025-10-17 09:50:33 | actor: customer | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Luis Gómez" &lt;luis.gomez@client.com&gt;</div>
+      <div><strong>To:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Follow-up on pending task reminders</div>
+      <div><strong>Date:</strong> Fri, 17 Oct 2025 09:50:33 -0600</div>
+    </div>
+    <div class="email-body">
+Hi Jorge,
+
+Yes, I get them, but I’m not really sure which task each reminder refers to.
+It just says “You have pending tasks today”, but I can’t tell which ones.
+
+So sometimes I ignore it because of that.
+
+Luis
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: summary_forwarded_to_lead | timestamp: 2025-10-17 10:20:00 | actor: team_member | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>To:</strong> "Raúl Villalobos" &lt;raul.villalobos@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Summary – Task reminders – Luis Gómez</div>
+      <div><strong>Date:</strong> Fri, 17 Oct 2025 10:20:00 -0600</div>
+    </div>
+    <div class="email-body">
+Raúl,
+
+Luis receives the reminders, but he doesn’t understand which tasks they refer to because the text is generic (“You have pending tasks today”).
+That’s why he often ignores them.
+
+I suggest asking him for more detail on what information he would like to see in the email.
+
+Jorge
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: lead_requested_followup | timestamp: 2025-10-17 10:35:47 | actor: team_lead | status: open]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Raúl Villalobos" &lt;raul.villalobos@acme.com&gt;</div>
+      <div><strong>To:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Summary – Task reminders – Luis Gómez</div>
+      <div><strong>Date:</strong> Fri, 17 Oct 2025 10:35:47 -0600</div>
+    </div>
+    <div class="email-body">
+Jorge,
+
+Exactly, ask him for examples of what he’d like to see: task names, due dates, etc.
+After that, send me the updated summary.
+
+Raúl
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: followup_sent_to_customer | timestamp: 2025-10-17 11:05:10 | actor: team_member | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>To:</strong> "Luis Gómez" &lt;luis.gomez@client.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Follow-up on pending task reminders</div>
+      <div><strong>Date:</strong> Fri, 17 Oct 2025 11:05:10 -0600</div>
+    </div>
+    <div class="email-body">
+Hi again, Luis,
+
+To better understand how to improve the reminders:
+
+1. Would it help if the email listed the names of the pending tasks?
+2. Would you like to see the due date of each task in that same email as well?
+
+With your input we can adjust the design.
+
+Best,
+Jorge
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: customer_followup_reply | timestamp: 2025-10-17 11:40:30 | actor: customer | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Luis Gómez" &lt;luis.gomez@client.com&gt;</div>
+      <div><strong>To:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Follow-up on pending task reminders</div>
+      <div><strong>Date:</strong> Fri, 17 Oct 2025 11:40:30 -0600</div>
+    </div>
+    <div class="email-body">
+Hi,
+
+Yes, exactly that: show the task names and the due date, and if possible, the person responsible for each task.
+That would make the emails more useful.
+
+Luis
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: summary_forwarded_to_lead | timestamp: 2025-10-17 12:05:55 | actor: team_member | status: pending]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>To:</strong> "Raúl Villalobos" &lt;raul.villalobos@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Follow-up – Task reminders – Luis Gómez</div>
+      <div><strong>Date:</strong> Fri, 17 Oct 2025 12:05:55 -0600</div>
+    </div>
+    <div class="email-body">
+Raúl,
+
+Follow-up on Luis’ case:
+
+- He wants the reminder to include the task name, due date, and responsible person.
+- With that, he says he’d use the reminder emails more.
+
+I propose updating the reminder templates with this information.
+
+Jorge
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENT: lead_approved | timestamp: 2025-10-17 12:20:00 | actor: team_lead | status: closed]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>From:</strong> "Raúl Villalobos" &lt;raul.villalobos@acme.com&gt;</div>
+      <div><strong>To:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Subject:</strong> Re: Follow-up – Task reminders – Luis Gómez</div>
+      <div><strong>Date:</strong> Fri, 17 Oct 2025 12:20:00 -0600</div>
+    </div>
+    <div class="email-body">
+Perfect.
+
+Approved for the next update to the email templates.
+Case closed.
+
+Raúl
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

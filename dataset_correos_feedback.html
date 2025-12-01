@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dataset sintético - Hilos de correo sobre retroalimentación de producto</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      margin: 40px;
+      background: #f5f5f5;
+      color: #222;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h2 {
+      margin-top: 40px;
+      border-bottom: 1px solid #aaa;
+      padding-bottom: 5px;
+    }
+    .thread {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      margin-bottom: 40px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+      page-break-inside: avoid;
+    }
+    .event-meta {
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 12px;
+      color: #555;
+      background: #f0f0f0;
+      padding: 6px 8px;
+      margin: 16px 0 4px 0;
+      border-left: 3px solid #888;
+    }
+    .email {
+      border: 1px solid #ccc;
+      background: #fff;
+      padding: 10px 12px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    .email-header {
+      font-size: 13px;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+    .email-header strong {
+      display: inline-block;
+      width: 65px;
+    }
+    .email-body {
+      white-space: pre-wrap;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .quoted {
+      border-left: 2px solid #ccc;
+      margin-top: 10px;
+      padding-left: 10px;
+      color: #555;
+      font-size: 13px;
+    }
+    .signature {
+      margin-top: 12px;
+      font-size: 13px;
+      color: #444;
+    }
+    hr.thread-separator {
+      margin: 50px 0;
+      border: none;
+      border-top: 2px dashed #bbb;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Dataset sintético – Hilos de correo sobre retroalimentación de producto</h1>
+
+<!-- ===================== HILO 01 ===================== -->
+<div class="thread">
+  <h2>HILO 01 – Dashboard de ventas (mediano)</h2>
+
+  <div class="event-meta">
+    [EVENTO: pregunta_enviada | timestamp: 2025-10-01 09:14:23 | actor: miembro | estado: abierto]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Ana Torres" &lt;ana.torres@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Carlos López" &lt;carlos.lopez@cliente.com&gt;</div>
+      <div><strong>Asunto:</strong> Seguimiento sobre tu opinión del nuevo dashboard de ventas</div>
+      <div><strong>Fecha:</strong> Wed, 01 Oct 2025 09:14:23 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Carlos,
+
+Soy Ana del equipo de producto de Acme Analytics 😊.
+Queríamos saber tu opinión sobre el nuevo dashboard de ventas que liberamos la semana pasada.
+
+Algunas preguntas concretas:
+1. ¿Te resulta fácil encontrar los filtros por fecha y sucursal?
+2. ¿Sientes que los gráficos cargan rápido o los percibes lentos?
+3. ¿Hay alguna métrica que eches de menos en el panel principal?
+
+Cualquier comentario, por breve que sea, nos ayuda mucho.
+
+¡Gracias de antemano!
+
+Saludos,
+Ana Torres
+Product Specialist – Acme Analytics
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: respuesta_cliente_recibida | timestamp: 2025-10-01 11:02:09 | actor: cliente | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Carlos López" &lt;carlos.lopez@cliente.com&gt;</div>
+      <div><strong>Para:</strong> "Ana Torres" &lt;ana.torres@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Seguimiento sobre tu opinión del nuevo dashboard de ventas</div>
+      <div><strong>Fecha:</strong> Wed, 01 Oct 2025 11:02:09 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Ana,
+
+La verdad apenas lo empecé a usar ayer.
+– Los filtros sí los vi, pero el de sucursal está un poco escondido, me costó hallarlo.
+– Sobre la velocidad, algunos días va bien y otros siento que tarda “un montón” (no medí, pero sí se siente lento).
+– De métricas, quizá sería útil ver el ticket promedio directo en la primera pantalla.
+
+No he revisado todos los reportes, así que igual luego veo más cosas.
+
+Saludos,
+Carlos
+
+<div class="quoted">
+El mié, 01 oct 2025 a las 09:14, Ana Torres &lt;ana.torres@acme.com&gt; escribió:
+&gt; Queríamos saber tu opinión sobre el nuevo dashboard de ventas...
+</div>
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: resumen_enviado_a_lider | timestamp: 2025-10-01 11:35:40 | actor: miembro | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Ana Torres" &lt;ana.torres@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Laura Méndez" &lt;laura.mendez@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Resumen feedback – Cliente Carlos López – Dashboard ventas</div>
+      <div><strong>Fecha:</strong> Wed, 01 Oct 2025 11:35:40 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Laura,
+
+Te resumo el feedback de Carlos López (cliente Retail Norte) sobre el nuevo dashboard:
+
+- Encuentra los filtros, pero comenta que el de sucursal está “escondido”.
+- Percibe intermitencia en la velocidad: algunos días bien, otros “muy lento” (sin datos exactos).
+- Sugiere agregar ticket promedio en la pantalla principal.
+- Aún no revisa todos los reportes, pero se compromete a seguir probando.
+
+Estado del caso: abierto a la espera de tu indicación para cerrar o dar seguimiento.
+
+Saludos,
+Ana
+
+(Adjunto hilo con el cliente)
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: lider_aprobo | timestamp: 2025-10-01 12:01:05 | actor: lider | estado: cerrado]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Laura Méndez" &lt;laura.mendez@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Ana Torres" &lt;ana.torres@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Resumen feedback – Cliente Carlos López – Dashboard ventas</div>
+      <div><strong>Fecha:</strong> Wed, 01 Oct 2025 12:01:05 -0600</div>
+    </div>
+    <div class="email-body">
+Gracias, Ana.
+
+Con esta información es suficiente por ahora.
+Tomemos nota para el backlog:
+- Mejorar la visibilidad del filtro de sucursal.
+- Evaluar rendimiento en horas pico.
+- Agregar ticket promedio al panel principal.
+
+Puedes cerrar este caso y seguir con el siguiente cliente.
+
+Laura
+
+<div class="quoted">
+El mié, 01 oct 2025 a las 11:35, Ana Torres &lt;ana.torres@acme.com&gt; escribió:
+&gt; Te resumo el feedback de Carlos López...
+</div>
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== HILO 02 ===================== -->
+<div class="thread">
+  <h2>HILO 02 – Notificaciones push en app móvil (largo con seguimiento)</h2>
+
+  <div class="event-meta">
+    [EVENTO: pregunta_enviada | timestamp: 2025-10-03 08:47:12 | actor: miembro | estado: abierto]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Mariana Pérez" &lt;mariana.perez@cliente.com&gt;</div>
+      <div><strong>Asunto:</strong> Comentarios sobre las notificaciones de la app móvil</div>
+      <div><strong>Fecha:</strong> Fri, 03 Oct 2025 08:47:12 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Mariana,
+
+Soy Diego, del equipo de producto móvil.
+Estamos revisando la experiencia de notificaciones push en la app.
+
+¿Nos podrías ayudar respondiendo estas preguntas?
+1. ¿Con qué frecuencia recibes notificaciones nuestras en un día normal?
+2. ¿Te parecen útiles o más bien “ruidosas”?
+3. ¿Has tenido problemas para desactivarlas o configurarlas?
+
+Lo que puedas compartirnos está perfecto, no tiene que ser muy detallado.
+
+Saludos,
+Diego
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: respuesta_cliente_recibida | timestamp: 2025-10-03 13:19:03 | actor: cliente | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Mariana Pérez" &lt;mariana.perez@cliente.com&gt;</div>
+      <div><strong>Para:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Comentarios sobre las notificaciones de la app móvil</div>
+      <div><strong>Fecha:</strong> Fri, 03 Oct 2025 13:19:03 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Diego,
+
+A ver, no tengo la cuenta exacta, pero siento que me llegan muchas.
+En especial de “recordatorio de carrito” y “promociones del día”, eso a veces es molesto.
+
+Para configurarlas sí es un poco confuso, entré al menú y no entendí bien la diferencia entre “alertas” y “mensajes importantes”. Al final solo desactivé casi todo.
+
+No sé si respondo todo, pero es lo que recuerdo.
+
+Mariana
+
+<div class="quoted">
+El vie, 03 oct 2025 a las 08:47, Diego Ramírez &lt;diego.ramirez@acme.com&gt; escribió:
+&gt; ¿Con qué frecuencia recibes notificaciones...?
+</div>
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: resumen_enviado_a_lider | timestamp: 2025-10-03 14:02:55 | actor: miembro | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>Para:</strong> "José Martínez" &lt;jose.martinez@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Resumen feedback – Notificaciones push – Cliente Mariana Pérez</div>
+      <div><strong>Fecha:</strong> Fri, 03 Oct 2025 14:02:55 -0600</div>
+    </div>
+    <div class="email-body">
+Hola José,
+
+Te comparto el resumen del feedback de Mariana Pérez sobre notificaciones push:
+
+- Percibe “muchas” notificaciones, especialmente de carrito y promociones diarias.
+- Comenta que la configuración es confusa (no entiende diferencia “alertas” vs “mensajes importantes”).
+- Terminó desactivando casi todo por frustración.
+
+Sugiero:
+1. Reducir frecuencia de notificaciones de marketing para este segmento.
+2. Simplificar el menú de configuración con etiquetas más claras.
+
+Quedo al pendiente de si quieres que hagamos seguimiento.
+
+Diego
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: lider_solicito_seguimiento | timestamp: 2025-10-03 14:25:31 | actor: lider | estado: abierto]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "José Martínez" &lt;jose.martinez@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Resumen feedback – Notificaciones push – Cliente Mariana Pérez</div>
+      <div><strong>Fecha:</strong> Fri, 03 Oct 2025 14:25:31 -0600</div>
+    </div>
+    <div class="email-body">
+Gracias, Diego.
+
+Antes de tomar decisiones de producto, consulta si el problema es constante:
+– Pregunta si las notificaciones que más le molestan son todos los días o solo en campañas.
+– Valida si ha llegado a desinstalar la app por este motivo.
+
+Luego de eso, vuelve a mandarme un breve resumen.
+
+José
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: seguimiento_enviado_al_cliente | timestamp: 2025-10-03 15:02:10 | actor: miembro | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Mariana Pérez" &lt;mariana.perez@cliente.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Comentarios sobre las notificaciones de la app móvil</div>
+      <div><strong>Fecha:</strong> Fri, 03 Oct 2025 15:02:10 -0600</div>
+    </div>
+    <div class="email-body">
+Hola de nuevo, Mariana,
+
+¡Gracias por tu respuesta anterior! Solo un par de preguntas rápidas de seguimiento:
+
+1. ¿Sientes que las notificaciones molestas llegan todos los días o solo en ciertos periodos (por ejemplo, promociones especiales)?
+2. ¿En algún momento pensaste en desinstalar la app por este tema o solo las desactivaste?
+
+Con eso nos ayudas muchísimo a priorizar los cambios.
+
+Saludos,
+Diego
+
+<div class="quoted">
+El vie, 03 oct 2025 a las 13:19, Mariana Pérez &lt;mariana.perez@cliente.com&gt; escribió:
+&gt; Para configurarlas sí es un poco confuso...
+</div>
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: respuesta_seguimiento_cliente | timestamp: 2025-10-03 17:40:55 | actor: cliente | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Mariana Pérez" &lt;mariana.perez@cliente.com&gt;</div>
+      <div><strong>Para:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Comentarios sobre las notificaciones de la app móvil</div>
+      <div><strong>Fecha:</strong> Fri, 03 Oct 2025 17:40:55 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Diego,
+
+Respondiendo rápido:
+
+1. Diría que es casi diario, sobre todo lo del carrito.
+2. No he desinstalado la app, pero sí la pensé dos veces. Al final preferí quitar las notificaciones porque sí me sirve para comprar.
+
+Espero les sirva.
+
+Mariana
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: resumen_enviado_a_lider | timestamp: 2025-10-03 18:05:12 | actor: miembro | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>Para:</strong> "José Martínez" &lt;jose.martinez@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Seguimiento feedback – Notificaciones push – Mariana Pérez</div>
+      <div><strong>Fecha:</strong> Fri, 03 Oct 2025 18:05:12 -0600</div>
+    </div>
+    <div class="email-body">
+Hola José,
+
+Seguimiento del caso de Mariana:
+
+- Notificaciones molestas: casi diarias, en especial recordatorios de carrito.
+- No desinstaló la app, pero comenta que lo pensó y que optó por desactivar notificaciones.
+
+Propongo:
+- Bajar frecuencia de recordatorios de carrito.
+- Ajustar segmentación para que no reciba promociones diarias.
+
+Quedo atento.
+
+Diego
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: lider_aprobo | timestamp: 2025-10-03 18:21:47 | actor: lider | estado: cerrado]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "José Martínez" &lt;jose.martinez@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Seguimiento feedback – Notificaciones push – Mariana Pérez</div>
+      <div><strong>Fecha:</strong> Fri, 03 Oct 2025 18:21:47 -0600</div>
+    </div>
+    <div class="email-body">
+Perfecto, Diego.
+
+Con esto es suficiente.
+Apruebo que se incluya este caso en el ajuste de estrategia de notificaciones para Q4.
+
+Puedes marcar el caso como cerrado.
+
+José
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== HILO 03 ===================== -->
+<div class="thread">
+  <h2>HILO 03 – Exportación a Excel (corto, sin líder)</h2>
+
+  <div class="event-meta">
+    [EVENTO: pregunta_enviada | timestamp: 2025-10-05 10:10:00 | actor: miembro | estado: abierto]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Sofía Herrera" &lt;sofia.herrera@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Luis Gómez" &lt;luis.gomez@cliente.com&gt;</div>
+      <div><strong>Asunto:</strong> Opinión sobre la nueva exportación a Excel</div>
+      <div><strong>Fecha:</strong> Sun, 05 Oct 2025 10:10:00 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Luis,
+
+Lanzamos una nueva versión de la exportación a Excel en el módulo de reportes.
+
+¿Podrías decirme brevemente?:
+1. Si el archivo se abre bien en tu versión de Excel.
+2. Si las columnas te resultan claras o tuviste que reorganizar todo.
+
+Con 2–3 líneas está perfecto.
+
+Saludos,
+Sofía
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: respuesta_cliente_recibida | timestamp: 2025-10-05 11:05:42 | actor: cliente | estado: cerrado]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Luis Gómez" &lt;luis.gomez@cliente.com&gt;</div>
+      <div><strong>Para:</strong> "Sofía Herrera" &lt;sofia.herrera@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Opinión sobre la nueva exportación a Excel</div>
+      <div><strong>Fecha:</strong> Sun, 05 Oct 2025 11:05:42 -0600</div>
+    </div>
+    <div class="email-body">
+Hola,
+
+El archivo se abre bien, pero me cambia el formato de fecha (me aparece como texto).
+Las columnas están más claras que antes, casi no moví nada.
+
+Por mi lado todo bien si arreglan lo de la fecha.
+
+Luis
+
+<div class="quoted">
+El dom, 05 oct 2025 a las 10:10, Sofía Herrera &lt;sofia.herrera@acme.com&gt; escribió:
+&gt; ¿Podrías decirme brevemente...?
+</div>
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== HILO 04 ===================== -->
+<div class="thread">
+  <h2>HILO 04 – Tiempos de carga del módulo de reportes (mediano)</h2>
+
+  <div class="event-meta">
+    [EVENTO: pregunta_enviada | timestamp: 2025-10-06 09:00:05 | actor: miembro | estado: abierto]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Miguel Pineda" &lt;miguel.pineda@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Fernanda Díaz" &lt;fernanda.diaz@cliente.com&gt;</div>
+      <div><strong>Asunto:</strong> Seguimiento sobre tiempos de carga en reportes</div>
+      <div><strong>Fecha:</strong> Mon, 06 Oct 2025 09:00:05 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Fernanda,
+
+Nos comentaron que el módulo de reportes a veces tarda en cargar en tu cuenta.
+
+¿Podrías indicarnos:
+1. Aproximadamente cuánto tarda en abrir el reporte más pesado.
+2. Si esto pasa solo en ciertos horarios o todo el día.
+3. Si otros usuarios de tu equipo te han mencionado el mismo problema.
+
+Gracias por tu ayuda,
+Miguel
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: respuesta_cliente_recibida | timestamp: 2025-10-06 12:17:39 | actor: cliente | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Fernanda Díaz" &lt;fernanda.diaz@cliente.com&gt;</div>
+      <div><strong>Para:</strong> "Miguel Pineda" &lt;miguel.pineda@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Seguimiento sobre tiempos de carga en reportes</div>
+      <div><strong>Fecha:</strong> Mon, 06 Oct 2025 12:17:39 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Miguel,
+
+No lo he cronometrado, pero el reporte de ventas mensuales tarda bastante, creo que más de 1 minuto.
+Pasa sobre todo en la mañana, cuando abrimos todo el sistema.
+
+Del resto del equipo, sé que al menos 2 personas se han quejado, pero no tengo sus datos aquí.
+
+Fernanda
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: resumen_enviado_a_lider | timestamp: 2025-10-06 13:05:00 | actor: miembro | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Miguel Pineda" &lt;miguel.pineda@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Patricia León" &lt;patricia.leon@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Resumen – Problema de rendimiento en reportes – Cliente Fernanda Díaz</div>
+      <div><strong>Fecha:</strong> Mon, 06 Oct 2025 13:05:00 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Patricia,
+
+Resumen del caso de Fernanda Díaz (cliente Ventas Sur):
+
+- Reporte de ventas mensuales tarda ~1 minuto o más.
+- Sucede principalmente en la mañana.
+- Menciona que al menos 2 usuarios más han tenido el mismo problema.
+
+Sugerencia: revisar logs en horario de 8:00–10:00 y validar si es tema de picos de uso.
+
+¿Lo dejamos así o quieres pedir seguimiento adicional?
+
+Miguel
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: lider_aprobo | timestamp: 2025-10-06 13:25:12 | actor: lider | estado: cerrado]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Patricia León" &lt;patricia.leon@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Miguel Pineda" &lt;miguel.pineda@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Resumen – Problema de rendimiento en reportes – Cliente Fernanda Díaz</div>
+      <div><strong>Fecha:</strong> Mon, 06 Oct 2025 13:25:12 -0600</div>
+    </div>
+    <div class="email-body">
+Gracias, Miguel.
+
+Con este nivel de detalle está bien.
+Lo voy a priorizar en el sprint de rendimiento y cerramos el caso con el cliente (no hace falta seguimiento extra por ahora).
+
+Patricia
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== HILO 05 ===================== -->
+<div class="thread">
+  <h2>HILO 05 – Búsqueda avanzada (corto con respuesta evasiva)</h2>
+
+  <div class="event-meta">
+    [EVENTO: pregunta_enviada | timestamp: 2025-10-07 15:10:44 | actor: miembro | estado: abierto]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Valeria Núñez" &lt;valeria.nunez@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Roberto Aguilar" &lt;roberto.aguilar@cliente.com&gt;</div>
+      <div><strong>Asunto:</strong> Comentarios sobre la nueva búsqueda avanzada</div>
+      <div><strong>Fecha:</strong> Tue, 07 Oct 2025 15:10:44 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Roberto,
+
+Hace unos días liberamos la búsqueda avanzada en el catálogo de productos.
+
+¿Te ha resultado útil?
+¿Hay algo que te haya costado trabajo entender o usar?
+
+Saludos,
+Valeria
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: respuesta_cliente_recibida | timestamp: 2025-10-07 18:59:10 | actor: cliente | estado: cerrado]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Roberto Aguilar" &lt;roberto.aguilar@cliente.com&gt;</div>
+      <div><strong>Para:</strong> "Valeria Núñez" &lt;valeria.nunez@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Comentarios sobre la nueva búsqueda avanzada</div>
+      <div><strong>Fecha:</strong> Tue, 07 Oct 2025 18:59:10 -0600</div>
+    </div>
+    <div class="email-body">
+Hola,
+
+No la he usado tanto, casi siempre busco por código como antes.
+Una vez probé los filtros, pero la verdad no puse mucha atención.
+
+Cuando tenga más tiempo la reviso mejor.
+
+Roberto
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== HILO 06 ===================== -->
+<div class="thread">
+  <h2>HILO 06 – Panel de tickets de soporte (largo)</h2>
+
+  <div class="event-meta">
+    [EVENTO: pregunta_enviada | timestamp: 2025-10-08 09:30:00 | actor: miembro | estado: abierto]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Lucía Ortega" &lt;lucia.ortega@cliente.com&gt;</div>
+      <div><strong>Asunto:</strong> Seguimiento sobre el nuevo panel de tickets</div>
+      <div><strong>Fecha:</strong> Wed, 08 Oct 2025 09:30:00 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Lucía,
+
+Soy Jorge, del equipo de customer success.
+Hace poco activamos el nuevo panel de tickets de soporte en tu cuenta.
+
+Me gustaría saber:
+1. Si te resulta claro el estatus de cada ticket (abierto, en progreso, resuelto).
+2. Si encuentras rápido los tickets antiguos.
+3. Si hay algo que te haya confundido o que no te guste.
+
+Gracias por tu tiempo,
+Jorge
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: respuesta_cliente_recibida | timestamp: 2025-10-08 10:45:18 | actor: cliente | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Lucía Ortega" &lt;lucia.ortega@cliente.com&gt;</div>
+      <div><strong>Para:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Seguimiento sobre el nuevo panel de tickets</div>
+      <div><strong>Fecha:</strong> Wed, 08 Oct 2025 10:45:18 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Jorge,
+
+En general se ve mejor que antes.
+– El estatus sí se entiende, pero a veces no sé cuándo realmente cierran el ticket.
+– Para buscar tickets viejos me cuesta, el filtro por fecha no es muy intuitivo.
+– Lo que no me gusta es que hay demasiados colores, me pierdo un poco.
+
+Lucía
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: resumen_enviado_a_lider | timestamp: 2025-10-08 11:20:40 | actor: miembro | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Raúl Villalobos" &lt;raul.villalobos@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Resumen – Feedback panel de tickets – Lucía Ortega</div>
+      <div><strong>Fecha:</strong> Wed, 08 Oct 2025 11:20:40 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Raúl,
+
+Resumen del feedback de Lucía:
+
+- Estatus claros, pero no distingue bien cuándo el ticket está realmente cerrado.
+- Dificultad para buscar tickets antiguos (filtro por fecha poco intuitivo).
+- Demasiados colores en el panel, le resulta confuso.
+
+¿Solicitamos seguimiento o lo damos por suficiente?
+
+Jorge
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: lider_solicito_seguimiento | timestamp: 2025-10-08 11:45:03 | actor: lider | estado: abierto]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Raúl Villalobos" &lt;raul.villalobos@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Resumen – Feedback panel de tickets – Lucía Ortega</div>
+      <div><strong>Fecha:</strong> Wed, 08 Oct 2025 11:45:03 -0600</div>
+    </div>
+    <div class="email-body">
+Jorge,
+
+Pídele más detalle sobre cómo interpreta los colores y qué esperaría ver para distinguir mejor los tickets cerrados.
+Después reenvíame el resumen.
+
+Raúl
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: seguimiento_enviado_al_cliente | timestamp: 2025-10-08 12:10:22 | actor: miembro | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Lucía Ortega" &lt;lucia.ortega@cliente.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Seguimiento sobre el nuevo panel de tickets</div>
+      <div><strong>Fecha:</strong> Wed, 08 Oct 2025 12:10:22 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Lucía,
+
+Gracias por tu feedback anterior 🙌.
+Solo para entender mejor:
+
+1. Cuando comentas que hay muchos colores, ¿cuáles te confunden más (por ejemplo, naranja, morado, etc.)?
+2. ¿Qué te ayudaría a distinguir mejor los tickets ya cerrados? (ícono, texto más grande, otra columna, etc.)
+
+Tus comentarios nos sirven mucho.
+
+Saludos,
+Jorge
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: respuesta_seguimiento_cliente | timestamp: 2025-10-08 13:05:10 | actor: cliente | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Lucía Ortega" &lt;lucia.ortega@cliente.com&gt;</div>
+      <div><strong>Para:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Seguimiento sobre el nuevo panel de tickets</div>
+      <div><strong>Fecha:</strong> Wed, 08 Oct 2025 13:05:10 -0600</div>
+    </div>
+    <div class="email-body">
+Hola,
+
+Más que nada el naranja y el morado se parecen mucho, y no recuerdo cuál es “esperando respuesta” y cuál es “en revisión”.
+
+Para los cerrados, me gustaría que se vieran en gris clarito y que dijera claramente “CERRADO” en vez de solo el ícono.
+
+Lucía
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: resumen_enviado_a_lider | timestamp: 2025-10-08 13:40:32 | actor: miembro | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Raúl Villalobos" &lt;raul.villalobos@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Seguimiento – Feedback colores panel de tickets – Lucía Ortega</div>
+      <div><strong>Fecha:</strong> Wed, 08 Oct 2025 13:40:32 -0600</div>
+    </div>
+    <div class="email-body">
+Raúl,
+
+Seguimiento de Lucía:
+
+- Colores que más confunden: naranja y morado (no recuerda qué significa cada uno).
+- Desea que tickets cerrados estén en gris claro y que diga explícitamente “CERRADO”.
+
+Sugiero ajustar paleta de colores y agregar la etiqueta textual.
+
+Jorge
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: lider_aprobo | timestamp: 2025-10-08 14:00:00 | actor: lider | estado: cerrado]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Raúl Villalobos" &lt;raul.villalobos@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Seguimiento – Feedback colores panel de tickets – Lucía Ortega</div>
+      <div><strong>Fecha:</strong> Wed, 08 Oct 2025 14:00:00 -0600</div>
+    </div>
+    <div class="email-body">
+Perfecto.
+
+Aprobado para incluir en la próxima iteración de UI.
+Gracias por el seguimiento tan detallado.
+
+Raúl
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== HILO 07 ===================== -->
+<div class="thread">
+  <h2>HILO 07 – Módulo de facturación (mediano, respuesta parcial)</h2>
+
+  <div class="event-meta">
+    [EVENTO: pregunta_enviada | timestamp: 2025-10-09 09:15:11 | actor: miembro | estado: abierto]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Elena Cruz" &lt;elena.cruz@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Javier Ruiz" &lt;javier.ruiz@cliente.com&gt;</div>
+      <div><strong>Asunto:</strong> Comentarios sobre el nuevo módulo de facturación</div>
+      <div><strong>Fecha:</strong> Thu, 09 Oct 2025 09:15:11 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Javier,
+
+Quisiera conocer tu experiencia con el nuevo módulo de facturación:
+
+1. ¿Te resultó fácil generar una factura desde cero?
+2. ¿Tuviste errores de timbrado o validación del RFC?
+3. ¿Algo que definitivamente cambiarías de la pantalla principal?
+
+Un saludo,
+Elena
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: respuesta_cliente_recibida | timestamp: 2025-10-09 12:00:40 | actor: cliente | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Javier Ruiz" &lt;javier.ruiz@cliente.com&gt;</div>
+      <div><strong>Para:</strong> "Elena Cruz" &lt;elena.cruz@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Comentarios sobre el nuevo módulo de facturación</div>
+      <div><strong>Fecha:</strong> Thu, 09 Oct 2025 12:00:40 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Elena,
+
+Generar la factura no estuvo tan mal, aunque al principio no encontraba dónde poner el método de pago.
+Errores de timbrado casi no, solo una vez por un RFC mal escrito (fue error mío).
+
+De la pantalla principal no sé bien qué decirte, solo siento que está “un poco cargada”.
+
+Javier
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: resumen_enviado_a_lider | timestamp: 2025-10-09 13:10:05 | actor: miembro | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Elena Cruz" &lt;elena.cruz@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Teresa Cano" &lt;teresa.cano@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Resumen – Feedback módulo de facturación – Javier Ruiz</div>
+      <div><strong>Fecha:</strong> Thu, 09 Oct 2025 13:10:05 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Teresa,
+
+Resumen del caso de Javier:
+
+- Le costó encontrar el campo de método de pago al generar factura.
+- Solo un error de timbrado por RFC mal capturado (error del usuario).
+- Percibe la pantalla principal como “un poco cargada”, pero sin detalles específicos.
+
+Sugiero en backlog: mejorar visibilidad del método de pago y simplificar elementos visuales.
+
+¿Lo das por suficiente?
+
+Elena
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: lider_aprobo | timestamp: 2025-10-09 13:25:47 | actor: lider | estado: cerrado]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Teresa Cano" &lt;teresa.cano@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Elena Cruz" &lt;elena.cruz@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Resumen – Feedback módulo de facturación – Javier Ruiz</div>
+      <div><strong>Fecha:</strong> Thu, 09 Oct 2025 13:25:47 -0600</div>
+    </div>
+    <div class="email-body">
+Sí, con esto está bien.
+
+Aprobado para que lo documentes como mejora de usabilidad y cierres el caso.
+
+Teresa
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== HILO 08 ===================== -->
+<div class="thread">
+  <h2>HILO 08 – App de inventarios offline (corto, con retraso)</h2>
+
+  <div class="event-meta">
+    [EVENTO: pregunta_enviada | timestamp: 2025-10-10 16:25:00 | actor: miembro | estado: abierto]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Ricardo Salas" &lt;ricardo.salas@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Paola Medina" &lt;paola.medina@cliente.com&gt;</div>
+      <div><strong>Asunto:</strong> Opinión sobre el modo offline de inventarios</div>
+      <div><strong>Fecha:</strong> Fri, 10 Oct 2025 16:25:00 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Paola,
+
+Soy Ricardo, del equipo de producto.
+Hace unas semanas activamos el modo offline en la app de inventarios.
+
+¿Te ha funcionado bien cuando no tienes conexión?
+¿Has perdido algún dato al sincronizar?
+
+Saludos,
+Ricardo
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: respuesta_cliente_recibida | timestamp: 2025-10-14 09:02:18 | actor: cliente | estado: cerrado]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Paola Medina" &lt;paola.medina@cliente.com&gt;</div>
+      <div><strong>Para:</strong> "Ricardo Salas" &lt;ricardo.salas@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Opinión sobre el modo offline de inventarios</div>
+      <div><strong>Fecha:</strong> Tue, 14 Oct 2025 09:02:18 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Ricardo,
+
+Perdón por contestar hasta ahora, se me había pasado el correo 😅.
+
+Lo he usado pocas veces, pero las veces que lo probé sí guardó los registros y luego sincronizó bien.
+Solo noté que la sincronización es lenta si hago muchos movimientos (no medí cuánto).
+
+Paola
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== HILO 09 ===================== -->
+<div class="thread">
+  <h2>HILO 09 – API de integración (mediano técnico)</h2>
+
+  <div class="event-meta">
+    [EVENTO: pregunta_enviada | timestamp: 2025-10-11 08:40:33 | actor: miembro | estado: abierto]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Ana Torres" &lt;ana.torres@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Andrés Campos" &lt;andres.campos@cliente.com&gt;</div>
+      <div><strong>Asunto:</strong> Seguimiento sobre uso de la nueva API de integración</div>
+      <div><strong>Fecha:</strong> Sat, 11 Oct 2025 08:40:33 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Andrés,
+
+Queremos saber qué tal te fue con la nueva versión de nuestra API para integración con tu ERP.
+
+1. ¿Pudiste implementar el nuevo endpoint de órdenes sin problema?
+2. ¿Encontraste clara la documentación de autenticación?
+3. ¿Algo que te haya bloqueado o hecho perder tiempo?
+
+Saludos,
+Ana
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: respuesta_cliente_recibida | timestamp: 2025-10-11 11:01:10 | actor: cliente | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Andrés Campos" &lt;andres.campos@cliente.com&gt;</div>
+      <div><strong>Para:</strong> "Ana Torres" &lt;ana.torres@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Seguimiento sobre uso de la nueva API de integración</div>
+      <div><strong>Fecha:</strong> Sat, 11 Oct 2025 11:01:10 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Ana,
+
+Implementé el endpoint de órdenes, pero tuve que adivinar algunos campos porque no estaban tan claros en la doc.
+La autenticación está bien, aunque me costó entender el ejemplo en cURL.
+
+Lo que más tiempo me tomó fue depurar un error 400 sin mensaje claro.
+
+Andrés
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: resumen_enviado_a_lider | timestamp: 2025-10-11 11:35:27 | actor: miembro | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Ana Torres" &lt;ana.torres@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Laura Méndez" &lt;laura.mendez@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Resumen – Uso de API integración – Andrés Campos</div>
+      <div><strong>Fecha:</strong> Sat, 11 Oct 2025 11:35:27 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Laura,
+
+Resumen del feedback de Andrés:
+
+- Implementó endpoint de órdenes, pero tuvo que adivinar campos (documentación incompleta).
+- Autenticación OK, pero ejemplo cURL poco claro.
+- Perdió tiempo depurando error 400 sin mensaje detallado.
+
+Propongo:
+- Completar descripción de campos en la doc.
+- Mejorar mensajes de error para códigos 4xx.
+
+¿Lo dejamos así?
+
+Ana
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: lider_aprobo | timestamp: 2025-10-11 11:50:00 | actor: lider | estado: cerrado]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Laura Méndez" &lt;laura.mendez@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Ana Torres" &lt;ana.torres@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Resumen – Uso de API integración – Andrés Campos</div>
+      <div><strong>Fecha:</strong> Sat, 11 Oct 2025 11:50:00 -0600</div>
+    </div>
+    <div class="email-body">
+Sí, Ana.
+
+Apruebo que registres estas mejoras en la documentación técnica y cierres el caso.
+
+Laura
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== HILO 10 ===================== -->
+<div class="thread">
+  <h2>HILO 10 – Reporte de desempeño de sucursales (corto, 2 correos)</h2>
+
+  <div class="event-meta">
+    [EVENTO: pregunta_enviada | timestamp: 2025-10-12 10:00:00 | actor: miembro | estado: abierto]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Sofía Herrera" &lt;sofia.herrera@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Daniela Flores" &lt;daniela.flores@cliente.com&gt;</div>
+      <div><strong>Asunto:</strong> Comentarios sobre el reporte de desempeño de sucursales</div>
+      <div><strong>Fecha:</strong> Sun, 12 Oct 2025 10:00:00 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Daniela,
+
+Queremos saber si el nuevo reporte de desempeño de sucursales te está ayudando.
+
+¿Te parecen claras las comparaciones entre sucursales y los indicadores de productividad?
+¿Cambiarías algo del formato?
+
+Saludos,
+Sofía
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: respuesta_cliente_recibida | timestamp: 2025-10-12 10:40:45 | actor: cliente | estado: cerrado]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Daniela Flores" &lt;daniela.flores@cliente.com&gt;</div>
+      <div><strong>Para:</strong> "Sofía Herrera" &lt;sofia.herrera@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Comentarios sobre el reporte de desempeño de sucursales</div>
+      <div><strong>Fecha:</strong> Sun, 12 Oct 2025 10:40:45 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Sofía,
+
+En general está bien. Lo único es que me gustaría poder ordenar las sucursales por indicador (por ejemplo, de mayor a menor productividad).
+Fuera de eso, se entiende todo.
+
+Daniela
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== HILO 11 ===================== -->
+<div class="thread">
+  <h2>HILO 11 – Centro de ayuda dentro de la app (mediano, respuesta vaga)</h2>
+
+  <div class="event-meta">
+    [EVENTO: pregunta_enviada | timestamp: 2025-10-13 09:05:12 | actor: miembro | estado: abierto]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Sergio Navarro" &lt;sergio.navarro@cliente.com&gt;</div>
+      <div><strong>Asunto:</strong> Seguimiento sobre el nuevo centro de ayuda en la app</div>
+      <div><strong>Fecha:</strong> Mon, 13 Oct 2025 09:05:12 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Sergio,
+
+Hace poco habilitamos el centro de ayuda dentro de la app (FAQ, tutoriales, etc.).
+
+¿Llegaste a usarlo?
+Si sí, ¿te ayudó a resolver tus dudas o terminaste contactando soporte igual?
+
+Gracias,
+Diego
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: respuesta_cliente_recibida | timestamp: 2025-10-13 15:30:02 | actor: cliente | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Sergio Navarro" &lt;sergio.navarro@cliente.com&gt;</div>
+      <div><strong>Para:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Seguimiento sobre el nuevo centro de ayuda en la app</div>
+      <div><strong>Fecha:</strong> Mon, 13 Oct 2025 15:30:02 -0600</div>
+    </div>
+    <div class="email-body">
+Hola,
+
+Lo vi por encima, pero casi siempre prefiero escribir al chat directo.
+Leí una FAQ pero luego ya no seguí.
+
+No sé si me sirvió mucho, la verdad.
+
+Sergio
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: resumen_enviado_a_lider | timestamp: 2025-10-13 16:00:00 | actor: miembro | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>Para:</strong> "José Martínez" &lt;jose.martinez@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Resumen – Uso centro de ayuda – Sergio Navarro</div>
+      <div><strong>Fecha:</strong> Mon, 13 Oct 2025 16:00:00 -0600</div>
+    </div>
+    <div class="email-body">
+José,
+
+Resumen del caso de Sergio:
+
+- Vio el centro de ayuda “por encima”, pero no lo usa mucho.
+- Prefiere contactar al chat directo.
+- No tiene claro si le fue útil o no; su respuesta es vaga.
+
+Sugiero usar este caso como ejemplo de baja adopción del centro de ayuda.
+
+Diego
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: lider_aprobo | timestamp: 2025-10-13 16:20:10 | actor: lider | estado: cerrado]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "José Martínez" &lt;jose.martinez@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Diego Ramírez" &lt;diego.ramirez@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Resumen – Uso centro de ayuda – Sergio Navarro</div>
+      <div><strong>Fecha:</strong> Mon, 13 Oct 2025 16:20:10 -0600</div>
+    </div>
+    <div class="email-body">
+Gracias, Diego.
+
+Aprobado.
+Tomemos nota para el análisis de canales preferidos (chat vs FAQ).
+
+José
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== HILO 12 ===================== -->
+<div class="thread">
+  <h2>HILO 12 – Filtros de fecha en dashboard financiero (largo, con error del cliente)</h2>
+
+  <div class="event-meta">
+    [EVENTO: pregunta_enviada | timestamp: 2025-10-14 08:50:00 | actor: miembro | estado: abierto]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Valeria Núñez" &lt;valeria.nunez@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Karla Jiménez" &lt;karla.jimenez@cliente.com&gt;</div>
+      <div><strong>Asunto:</strong> Comentarios sobre los filtros de fecha del dashboard financiero</div>
+      <div><strong>Fecha:</strong> Tue, 14 Oct 2025 08:50:00 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Karla,
+
+Me gustaría saber cómo te está yendo con los nuevos filtros de fecha en el dashboard financiero.
+
+1. ¿Te resultan fáciles de entender (hoy, ayer, últimos 7 días, rango personalizado)?
+2. ¿Has notado algún dato extraño cuando cambias el rango?
+
+Saludos,
+Valeria
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: respuesta_cliente_recibida | timestamp: 2025-10-14 09:25:17 | actor: cliente | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Karla Jiménez" &lt;karla.jimenez@cliente.com&gt;</div>
+      <div><strong>Para:</strong> "Valeria Núñez" &lt;valeria.nunez@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Comentarios sobre los filtros de fecha del dashboard financiero</div>
+      <div><strong>Fecha:</strong> Tue, 14 Oct 2025 09:25:17 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Valeria,
+
+Al principio pensé que el filtro no funcionaba porque no veía datos, pero luego me di cuenta de que había puesto el rango al revés (del 31/12 al 01/01).
+Fuera de eso, están claros.
+
+Una vez me pareció que faltaban datos, pero creo que era porque todavía no se cerraba el día.
+
+Karla
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: resumen_enviado_a_lider | timestamp: 2025-10-14 09:55:00 | actor: miembro | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Valeria Núñez" &lt;valeria.nunez@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Teresa Cano" &lt;teresa.cano@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Resumen – Filtros de fecha dashboard financiero – Karla Jiménez</div>
+      <div><strong>Fecha:</strong> Tue, 14 Oct 2025 09:55:00 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Teresa,
+
+Resumen del caso de Karla:
+
+- Al principio pensó que el filtro fallaba, pero fue error de orden en el rango (fecha inicio/fin invertidas).
+- Después lo entendió y lo ve claro.
+- Una vez creyó que faltaban datos, pero en realidad el día no había cerrado.
+
+Sugiero:
+- Agregar validación cuando la fecha inicial sea mayor a la final.
+- Mostrar aviso si el día actual aún está en curso.
+
+¿Te parece suficiente?
+
+Valeria
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: lider_aprobo | timestamp: 2025-10-14 10:10:10 | actor: lider | estado: cerrado]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Teresa Cano" &lt;teresa.cano@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Valeria Núñez" &lt;valeria.nunez@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Resumen – Filtros de fecha dashboard financiero – Karla Jiménez</div>
+      <div><strong>Fecha:</strong> Tue, 14 Oct 2025 10:10:10 -0600</div>
+    </div>
+    <div class="email-body">
+Sí, está muy claro.
+
+Aprobado para que se incluya como mejora de validación en el backlog.
+
+Teresa
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== HILO 13 ===================== -->
+<div class="thread">
+  <h2>HILO 13 – Funcionalidad de comentarios internos (corto, 3 correos)</h2>
+
+  <div class="event-meta">
+    [EVENTO: pregunta_enviada | timestamp: 2025-10-15 09:45:00 | actor: miembro | estado: abierto]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Miguel Pineda" &lt;miguel.pineda@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Carlos López" &lt;carlos.lopez@cliente.com&gt;</div>
+      <div><strong>Asunto:</strong> Opinión sobre la nueva sección de comentarios internos</div>
+      <div><strong>Fecha:</strong> Wed, 15 Oct 2025 09:45:00 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Carlos,
+
+Agregamos una sección de comentarios internos en cada pedido (solo visible para tu equipo).
+
+¿La has utilizado?
+Si sí, ¿te ayuda a coordinarte mejor con tu equipo o casi no la usan?
+
+Miguel
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: respuesta_cliente_recibida | timestamp: 2025-10-15 10:20:30 | actor: cliente | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Carlos López" &lt;carlos.lopez@cliente.com&gt;</div>
+      <div><strong>Para:</strong> "Miguel Pineda" &lt;miguel.pineda@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Opinión sobre la nueva sección de comentarios internos</div>
+      <div><strong>Fecha:</strong> Wed, 15 Oct 2025 10:20:30 -0600</div>
+    </div>
+    <div class="email-body">
+Hola,
+
+La usamos solo en algunos pedidos complicados.
+Ayuda, pero la gente a veces prefiere escribir por WhatsApp, ya es costumbre.
+
+Carlos
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: resumen_enviado_a_lider | timestamp: 2025-10-15 11:00:00 | actor: miembro | estado: cerrado]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Miguel Pineda" &lt;miguel.pineda@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Patricia León" &lt;patricia.leon@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Resumen – Comentarios internos – Cliente Carlos López</div>
+      <div><strong>Fecha:</strong> Wed, 15 Oct 2025 11:00:00 -0600</div>
+    </div>
+    <div class="email-body">
+Patricia,
+
+Carlos usa los comentarios internos solo en casos complejos, pero el canal principal sigue siendo WhatsApp.
+Lo registro como uso parcial sin necesidad de seguimiento adicional.
+
+Miguel
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== HILO 14 ===================== -->
+<div class="thread">
+  <h2>HILO 14 – Modo oscuro de la interfaz (mediano con seguimiento breve)</h2>
+
+  <div class="event-meta">
+    [EVENTO: pregunta_enviada | timestamp: 2025-10-16 08:35:00 | actor: miembro | estado: abierto]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Elena Cruz" &lt;elena.cruz@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Mariana Pérez" &lt;mariana.perez@cliente.com&gt;</div>
+      <div><strong>Asunto:</strong> Comentarios sobre el nuevo modo oscuro</div>
+      <div><strong>Fecha:</strong> Thu, 16 Oct 2025 08:35:00 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Mariana,
+
+Activamos el modo oscuro en la plataforma web.
+
+¿Lo has probado?
+¿Te resulta más cómodo que el modo claro o no notas diferencia?
+
+Saludos,
+Elena
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: respuesta_cliente_recibida | timestamp: 2025-10-16 09:10:00 | actor: cliente | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Mariana Pérez" &lt;mariana.perez@cliente.com&gt;</div>
+      <div><strong>Para:</strong> "Elena Cruz" &lt;elena.cruz@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Comentarios sobre el nuevo modo oscuro</div>
+      <div><strong>Fecha:</strong> Thu, 16 Oct 2025 09:10:00 -0600</div>
+    </div>
+    <div class="email-body">
+Hola,
+
+Sí, lo probé. Me gusta para trabajar de noche, pero en el día sigo usando el claro.
+Una cosa rara es que algunas tablas se ven muy contrastadas, me cansa un poco la vista.
+
+Mariana
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: resumen_enviado_a_lider | timestamp: 2025-10-16 09:40:20 | actor: miembro | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Elena Cruz" &lt;elena.cruz@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Teresa Cano" &lt;teresa.cano@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Resumen – Modo oscuro – Mariana Pérez</div>
+      <div><strong>Fecha:</strong> Thu, 16 Oct 2025 09:40:20 -0600</div>
+    </div>
+    <div class="email-body">
+Teresa,
+
+Mariana usa modo oscuro solo por la noche, en el día prefiere modo claro.
+Comenta que algunas tablas tienen contraste demasiado fuerte y le cansan la vista.
+
+Sugiero revisar paleta de colores en tablas específicamente.
+
+Elena
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: lider_aprobo | timestamp: 2025-10-16 10:00:00 | actor: lider | estado: cerrado]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Teresa Cano" &lt;teresa.cano@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Elena Cruz" &lt;elena.cruz@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Resumen – Modo oscuro – Mariana Pérez</div>
+      <div><strong>Fecha:</strong> Thu, 16 Oct 2025 10:00:00 -0600</div>
+    </div>
+    <div class="email-body">
+Correcto, Elena.
+
+Aprobado para la próxima iteración de diseño.
+Cierra el caso.
+
+Teresa
+    </div>
+  </div>
+</div>
+
+<hr class="thread-separator">
+
+<!-- ===================== HILO 15 ===================== -->
+<div class="thread">
+  <h2>HILO 15 – Recordatorios de tareas pendientes (largo, con confusión del cliente)</h2>
+
+  <div class="event-meta">
+    [EVENTO: pregunta_enviada | timestamp: 2025-10-17 09:00:00 | actor: miembro | estado: abierto]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Luis Gómez" &lt;luis.gomez@cliente.com&gt;</div>
+      <div><strong>Asunto:</strong> Seguimiento sobre los recordatorios de tareas pendientes</div>
+      <div><strong>Fecha:</strong> Fri, 17 Oct 2025 09:00:00 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Luis,
+
+Hace poco activamos recordatorios automáticos de tareas pendientes en tu cuenta.
+
+¿Los has recibido?
+Si sí, ¿te parecen oportunos o sientes que llegan en momentos que no ayudan?
+
+Saludos,
+Jorge
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: respuesta_cliente_recibida | timestamp: 2025-10-17 09:50:33 | actor: cliente | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Luis Gómez" &lt;luis.gomez@cliente.com&gt;</div>
+      <div><strong>Para:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Seguimiento sobre los recordatorios de tareas pendientes</div>
+      <div><strong>Fecha:</strong> Fri, 17 Oct 2025 09:50:33 -0600</div>
+    </div>
+    <div class="email-body">
+Hola Jorge,
+
+Sí me llegan, pero no estoy seguro de qué tarea es cada recordatorio.
+Solo dice “Tienes tareas pendientes hoy”, pero no me queda claro cuáles.
+
+A veces lo ignoro por eso.
+
+Luis
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: resumen_enviado_a_lider | timestamp: 2025-10-17 10:20:00 | actor: miembro | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Raúl Villalobos" &lt;raul.villalobos@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Resumen – Recordatorios de tareas – Luis Gómez</div>
+      <div><strong>Fecha:</strong> Fri, 17 Oct 2025 10:20:00 -0600</div>
+    </div>
+    <div class="email-body">
+Raúl,
+
+Luis recibe los recordatorios, pero no entiende qué tareas se incluyen, ya que el texto es genérico (“Tienes tareas pendientes hoy”).
+Por eso suele ignorarlos.
+
+Sugiero pedirle un poco más de detalle sobre qué información le gustaría ver en el correo.
+
+Jorge
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: lider_solicito_seguimiento | timestamp: 2025-10-17 10:35:47 | actor: lider | estado: abierto]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Raúl Villalobos" &lt;raul.villalobos@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Resumen – Recordatorios de tareas – Luis Gómez</div>
+      <div><strong>Fecha:</strong> Fri, 17 Oct 2025 10:35:47 -0600</div>
+    </div>
+    <div class="email-body">
+Jorge,
+
+Exacto, pídele ejemplos de qué le gustaría ver: nombres de tareas, fechas límite, etc.
+Después me reenvías el resumen.
+
+Raúl
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: seguimiento_enviado_al_cliente | timestamp: 2025-10-17 11:05:10 | actor: miembro | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Luis Gómez" &lt;luis.gomez@cliente.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Seguimiento sobre los recordatorios de tareas pendientes</div>
+      <div><strong>Fecha:</strong> Fri, 17 Oct 2025 11:05:10 -0600</div>
+    </div>
+    <div class="email-body">
+Hola de nuevo, Luis,
+
+Para entender mejor cómo mejorar los recordatorios:
+
+1. ¿Te serviría que el correo listara los nombres de las tareas pendientes?
+2. ¿Te gustaría ver también la fecha límite de cada tarea en ese mismo correo?
+
+Con lo que nos digas podemos ajustar el diseño.
+
+Saludos,
+Jorge
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: respuesta_seguimiento_cliente | timestamp: 2025-10-17 11:40:30 | actor: cliente | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Luis Gómez" &lt;luis.gomez@cliente.com&gt;</div>
+      <div><strong>Para:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Seguimiento sobre los recordatorios de tareas pendientes</div>
+      <div><strong>Fecha:</strong> Fri, 17 Oct 2025 11:40:30 -0600</div>
+    </div>
+    <div class="email-body">
+Hola,
+
+Sí, justo eso: que aparezcan los nombres de las tareas y la fecha límite, y si se puede, el responsable de cada una.
+Con eso ya lo vería más útil.
+
+Luis
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: resumen_enviado_a_lider | timestamp: 2025-10-17 12:05:55 | actor: miembro | estado: pendiente]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Raúl Villalobos" &lt;raul.villalobos@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Seguimiento – Recordatorios de tareas – Luis Gómez</div>
+      <div><strong>Fecha:</strong> Fri, 17 Oct 2025 12:05:55 -0600</div>
+    </div>
+    <div class="email-body">
+Raúl,
+
+Seguimiento del caso de Luis:
+
+- Quiere que el recordatorio incluya nombre de la tarea, fecha límite y responsable.
+- Con eso usaría más los correos.
+
+Propongo actualizar plantilla de recordatorios con esa información.
+
+Jorge
+    </div>
+  </div>
+
+  <div class="event-meta">
+    [EVENTO: lider_aprobo | timestamp: 2025-10-17 12:20:00 | actor: lider | estado: cerrado]
+  </div>
+  <div class="email">
+    <div class="email-header">
+      <div><strong>De:</strong> "Raúl Villalobos" &lt;raul.villalobos@acme.com&gt;</div>
+      <div><strong>Para:</strong> "Jorge Rojas" &lt;jorge.rojas@acme.com&gt;</div>
+      <div><strong>Asunto:</strong> Re: Seguimiento sobre los recordatorios de tareas pendientes</div>
+      <div><strong>Fecha:</strong> Fri, 17 Oct 2025 12:20:00 -0600</div>
+    </div>
+    <div class="email-body">
+Perfecto.
+
+Aprobado para próximo cambio en las plantillas de correo.
+Caso cerrado.
+
+Raúl
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

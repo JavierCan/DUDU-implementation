@@ -1,0 +1,16 @@
+id,question,answer,page
+1,"¿Qué métrica sugiere el cliente Carlos López agregar al panel principal del dashboard de ventas?","el ticket promedio",3
+2,"En el caso de las notificaciones push, ¿qué tipo de mensajes menciona Mariana como especialmente molestos?","las notificaciones de carrito y las promociones diarias",6
+3,"Al exportar a Excel, ¿qué problema tiene Luis con el formato de las fechas?","que las fechas aparecen como texto",9
+4,"Según Fernanda, ¿en qué momento del día se nota más la lentitud del módulo de reportes?","por la mañana, cuando abren el sistema",10
+5,"En la búsqueda avanzada, ¿cómo suele buscar Roberto los productos en lugar de usar los nuevos filtros?","por código",12
+6,"En el panel de tickets, ¿qué colores confunden a Lucía porque son demasiado parecidos?","el naranja y el morado",15
+7,"En el módulo de facturación, ¿qué campo le costó encontrar a Javier al generar una factura?","el campo de método de pago",16
+8,"En la app de inventarios offline, ¿qué observa Paola sobre la sincronización cuando hace muchos movimientos?","que la sincronización es lenta si hace muchos movimientos",18
+9,"Al usar la nueva API de integración, ¿qué código de error HTTP menciona Andrés como problemático de depurar?","el error 400",19
+10,"En el reporte de desempeño de sucursales, ¿qué funcionalidad adicional pide Daniela?","poder ordenar las sucursales por indicador",21
+11,"Respecto al centro de ayuda dentro de la app, ¿qué canal prefiere usar Sergio para resolver sus dudas?","el chat directo",22
+12,"Al usar los filtros de fecha del dashboard financiero, ¿qué error cometió Karla al principio?","poner el rango de fechas al revés, con inicio y fin invertidos",24
+13,"Sobre la sección de comentarios internos, ¿qué canal sigue siendo el principal para el equipo de Carlos?","WhatsApp",26
+14,"En el modo oscuro de la interfaz, ¿en qué momento del día dice Mariana que lo usa más?","por la noche",28
+15,"En los recordatorios de tareas pendientes, ¿qué información adicional quiere Luis que aparezca en el correo?","el nombre de la tarea, la fecha límite y el responsable",31
