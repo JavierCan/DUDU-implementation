@@ -1,0 +1,16 @@
+question,answer,page
+"What metric does client Carlos López suggest adding to the main panel of the sales dashboard?","the average ticket",2
+"In the case of push notifications, what type of messages does Mariana mention as especially annoying?","cart reminder and daily promotion notifications",5
+"When exporting to Excel, what problem does Luis have with the date format?","the dates appear as text",9
+"According to Fernanda, at what time of day is the slowness of the reports module most noticeable?","in the morning, when they open the system",10
+"In the advanced search, how does Roberto usually look up products instead of using the new filters?","by code",12
+"In the ticket panel, which colors confuse Lucía because they are too similar?","orange and purple",15
+"In the billing module, which field did Javier have trouble finding when generating an invoice?","the payment method field",16
+"In the offline inventory app, what does Paola notice about synchronization when she makes many movements?","that synchronization is slow if she does many movements",18
+"When using the new integration API, which HTTP error code does Andrés mention as problematic to debug?","error 400",19
+"In the branch performance report, what additional functionality does Daniela request?","to sort branches by indicator",21
+"Regarding the in-app help center, which channel does Sergio prefer to use to solve his doubts?","live chat",22
+"When using the date filters in the financial dashboard, what mistake did Karla make at the beginning?","she set the date range backwards, with start and end inverted",24
+"About the internal comments section, which channel is still the main one for Carlos's team?","WhatsApp",26
+"In the dark mode interface, at what time of day does Mariana say she uses it more?","at night",28
+"In the pending task reminders, what additional information does Luis want the email to include?","the task name, due date and responsible person",31

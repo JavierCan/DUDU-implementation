@@ -11,7 +11,7 @@ from metrics_docvqa import (
 )
 
 # ===================== FIXED PATHS =====================
-DEVICE = "cpu"  # or "cuda" if you have a GPU
+DEVICE = "cuda"  # or "cuda" if you have a GPU
 
 PDF_PATH = "Dataset sintético - Hilos de correo sobre retroalimentación de producto.pdf"
 GT_CSV = "ground_truth_emails.csv"

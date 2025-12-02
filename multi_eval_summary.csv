@@ -1,0 +1,5 @@
+dataset,exp,avg_anls,avg_ret,avg_chunk,avg_E,avg_C,avg_H,avg_DUDU,out_csv,dudu_csv
+emails_es,rag_vt5,0.2288770053475936,1.0,0.8607395964377478,1.1333333333333333,1.1333333333333333,1.3333333333333333,0.3911133333333333,results_emails_es_rag_vt5.csv,results_emails_es_rag_vt5_dudu.csv
+emails_es,rag_vt5_qwen,0.36483294483294487,1.0,0.8607395964377478,2.466666666666667,2.466666666666667,2.8,0.8444466666666667,results_emails_es_rag_vt5_qwen.csv,results_emails_es_rag_vt5_qwen_dudu.csv
+emails_en,rag_vt5,0.487655634357762,0.8666666666666667,0.8507620361573184,2.4,2.2666666666666666,2.8,0.8133266666666666,results_emails_en_rag_vt5.csv,results_emails_en_rag_vt5_dudu.csv
+emails_en,rag_vt5_qwen,0.421968182575379,0.8666666666666667,0.8507620361573184,2.7333333333333334,2.6666666666666665,2.933333333333333,0.9177733333333333,results_emails_en_rag_vt5_qwen.csv,results_emails_en_rag_vt5_qwen_dudu.csv
